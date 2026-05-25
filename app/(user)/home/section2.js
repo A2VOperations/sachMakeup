@@ -26,7 +26,7 @@ const Section2 = () => {
           {/* Main Image */}
           <div className="relative z-10 w-full aspect-[4/5] bg-gray-200 shadow-sm">
             <Image
-              src="/photos/img (13).webp"
+              src="/photos/img (37).jpg"
               alt="Woman touching face"
               className="w-full h-full object-cover"
               width={500}
@@ -35,7 +35,7 @@ const Section2 = () => {
           </div>
 
           {/* Circular Badge */}
-          <div className="absolute -bottom-20 -left-10 md:left-24 z-20 w-36 h-36 md:w-40 md:h-40 bg-white rounded-full flex items-center justify-center shadow-lg">
+          <div className="absolute -bottom-20 -left-4 sm:left-12 md:left-24 z-20 w-36 h-36 md:w-40 md:h-40 bg-white rounded-full flex items-center justify-center shadow-lg">
             {/* Circular Text SVG */}
             <div className="absolute left inset-0 animate-spin-slow p-2">
               <svg
@@ -74,7 +74,7 @@ const Section2 = () => {
 
         {/* Right Column: Text Content */}
         <div className="relative flex flex-col gap-6 lg:gap-8">
-          <h2 className="text-4xl md:text-5xl lg:text-[54px] leading-[1.2] font-extrabold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] leading-[1.2] font-extrabold tracking-tight">
             Beyond Skin Deep Personalized Care For Your Unique Beauty Journey
             Description At ClinicMaster
           </h2>

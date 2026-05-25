@@ -145,7 +145,7 @@ const Section5 = () => {
 
                     {/* Right: Content */}
                     <div className="flex-1 flex flex-col justify-center relative min-w-0 mt-6 md:mt-0 md:ml-8 px-2 md:px-0">
-                      <div className="absolute top-[-20px] md:top-[-40px] right-0 text-[100px] md:text-[180px] font-bold text-slate-100 leading-none select-none z-0">
+                      <div className="absolute top-[-20px] md:top-[-40px] right-0 text-[80px] md:text-[180px] font-bold text-slate-100 leading-none select-none z-0">
                         {service.id}
                       </div>
 
@@ -209,7 +209,7 @@ const Section5 = () => {
                         <FiArrowUpRight size={20} />
                       </div>
 
-                      <div className="md:hidden text-white text-lg font-medium tracking-wide">
+                      <div className="md:hidden text-white text-sm sm:text-base font-medium tracking-wide">
                         {service.title}
                       </div>
 

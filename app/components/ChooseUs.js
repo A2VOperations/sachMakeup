@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import Popup from "./Popup";
 import {
   Check,
   ArrowRight,
@@ -14,6 +15,8 @@ import {
 } from "lucide-react";
 
 const ChooseUs = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   const features = [
     "Comprehensive Specialties",
     "Research and Development",
@@ -54,7 +57,10 @@ const ChooseUs = () => {
           </div>
 
           <div className="flex flex-wrap items-center gap-8 md:gap-12">
-            <button className="bg-[#0A2647] hover:bg-[#0A2647]/90 text-white pl-7 pr-2.5 py-2.5 rounded-xl flex items-center gap-4 font-semibold text-[17px] transition-all hover:scale-105 shadow-xl shadow-blue-900/10">
+            <button 
+              onClick={() => setIsPopupOpen(true)}
+              className="bg-[#0A2647] hover:bg-[#0A2647]/90 text-white pl-7 pr-2.5 py-2.5 rounded-xl flex items-center gap-4 font-semibold text-[17px] transition-all hover:scale-105 shadow-xl shadow-blue-900/10"
+            >
               Appointment
               <div className="bg-white text-[#0A2647] p-2 rounded-lg">
                 <ArrowRight className="w-5 h-5" />
@@ -113,11 +119,11 @@ const ChooseUs = () => {
           </div>
 
           {/* Video Call Support Badge */}
-          <div className="absolute top-[35%] -left-6 lg:-left-12 z-20 bg-white rounded-[1.25rem] shadow-xl p-4 flex items-center gap-4">
+          <div className="absolute top-[35%] -left-2 sm:-left-6 lg:-left-12 z-20 bg-white rounded-[1.25rem] shadow-xl p-2.5 sm:p-4 flex items-center gap-2 sm:gap-4">
             <div className="text-[#f26d21] border-[1.5px] border-[#f26d21] rounded-xl p-2">
               <Video className="w-6 h-6 stroke-[2]" />
             </div>
-            <p className="text-[#0A2647] font-bold text-[15px] leading-[1.2]">
+            <p className="text-[#0A2647] font-bold text-[13px] sm:text-[15px] leading-[1.2]">
               Video Call
               <br />
               Support
@@ -125,7 +131,7 @@ const ChooseUs = () => {
           </div>
 
           {/* Google Rating Badge */}
-          <div className="absolute top-8 right-0 lg:-right-8 z-20 bg-white rounded-[1.5rem] shadow-xl p-5 flex items-center gap-5 border border-gray-100">
+          <div className="absolute top-4 -right-2 sm:-right-4 lg:-right-8 z-20 bg-white rounded-[1.5rem] shadow-xl p-3 sm:p-5 flex items-center gap-3 sm:gap-5 border border-gray-100">
             <div className="w-12 h-12 flex-shrink-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -172,6 +178,7 @@ const ChooseUs = () => {
           </div>
         </div>
       </div>
+      <Popup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </div>
   );
 };

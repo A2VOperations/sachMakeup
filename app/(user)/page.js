@@ -1,4 +1,4 @@
-import Section1 from "./home/section1";
+import Banner from "./home/banner";
 import Section2 from "./home/section2";
 import Section3 from "./home/section3";
 import Section4 from "./home/section4";
@@ -14,7 +14,7 @@ import Testimonial from "../components/Testomonial";
 export default function Home() {
   return (
     <>
-      <Section1 />
+      <Banner />
       <Section7 />
       <Section2 />
       <Section3 />

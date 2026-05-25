@@ -1,8 +1,21 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
-import { FaPaperPlane, FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa";
+import {
+  FaPaperPlane,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaClock,
+  FaWhatsapp,
+  FaInstagram,
+  FaFacebookF,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+import Popup from "../components/Popup";
 
 const Footer = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
     <footer className="bg-[#141d2e] text-white pt-16 pb-8 font-sans relative overflow-hidden">
       {/* Background Overlay (Subtle Gradient) */}
@@ -58,10 +71,16 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex gap-4">
-            <button className="px-7 py-2.5 border border-gray-400 text-white rounded-xl hover:bg-white hover:text-[#141d2e] transition-colors font-medium text-sm">
+            <Link
+              href="/Contact"
+              className="px-7 py-2.5 border border-gray-400 text-white rounded-xl hover:bg-white hover:text-[#141d2e] transition-colors font-medium text-sm"
+            >
               Contact Us
-            </button>
-            <button className="px-7 py-2.5 bg-white text-[#141d2e] rounded-xl hover:bg-gray-200 transition-colors font-medium text-sm">
+            </Link>
+            <button
+              onClick={() => setIsPopupOpen(true)}
+              className="px-7 py-2.5 bg-white text-[#141d2e] rounded-xl hover:bg-gray-200 transition-colors font-medium text-sm"
+            >
               Appointment
             </button>
           </div>
@@ -88,8 +107,72 @@ const Footer = () => {
                 <FaPaperPlane className="text-sm" />
               </button>
             </div>
+
+            {/* Social Media Links */}
+            <div className="mt-8">
+              <h4 className="text-[13px] font-bold text-gray-300 mb-3 tracking-wider uppercase">
+                Follow Us
+              </h4>
+              <div className="flex gap-3">
+                <a
+                  href="https://wa.me/11234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-white flex items-center justify-center transition-all duration-300 border border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.1)] hover:scale-105"
+                  title="WhatsApp"
+                >
+                  <FaWhatsapp className="w-[18px] h-[18px]" />
+                </a>
+                <a
+                  href="https://instagram.com/sachmakeover"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-xl bg-pink-500/10 text-pink-400 hover:bg-pink-500 hover:text-white flex items-center justify-center transition-all duration-300 border border-pink-500/20 shadow-[0_0_15px_rgba(236,72,153,0.1)] hover:scale-105"
+                  title="Instagram"
+                >
+                  <FaInstagram className="w-[18px] h-[18px]" />
+                </a>
+                <a
+                  href="https://facebook.com/sachmakeover"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-xl bg-blue-500/10 text-blue-400 hover:bg-blue-500 hover:text-white flex items-center justify-center transition-all duration-300 border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)] hover:scale-105"
+                  title="Facebook"
+                >
+                  <FaFacebookF className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
           </div>
 
+          <div>
+            <h3 className="text-[16px] font-bold mb-6">Our Studio</h3>
+            <ul className="space-y-4 text-[13px] font-medium text-gray-300">
+              <li className="flex gap-2.5 items-start">
+                <FaMapMarkerAlt
+                  className="text-[#f97316] shrink-0 mt-1"
+                  size={14}
+                />
+                <span className="leading-relaxed">
+                  123 Beauty Avenue,
+                  <br />
+                  Makeup District,
+                  <br />
+                  New York, NY 10001
+                </span>
+              </li>
+              <li className="pt-3 border-t border-gray-800/80">
+                <span className="text-[#f97316] block mb-2 font-bold text-[12px] tracking-wider uppercase">
+                  Locations Served
+                </span>
+                <p className="text-gray-400 leading-relaxed text-[12px]">
+                  New Delhi • Gurugram • Noida
+                  <br />
+                  Haryana • Punjab
+                </p>
+              </li>
+            </ul>
+          </div>
           <div>
             <h3 className="text-[16px] font-bold mb-6">Our Services</h3>
             <ul className="space-y-3.5 text-[13px] font-medium text-gray-300">
@@ -98,7 +181,7 @@ const Footer = () => {
                   href="#"
                   className="hover:text-orange-500 transition-colors"
                 >
-                  Emergency Care
+                  Bridal Makeovers
                 </Link>
               </li>
               <li>
@@ -106,7 +189,7 @@ const Footer = () => {
                   href="#"
                   className="hover:text-orange-500 transition-colors"
                 >
-                  Operation Theater
+                  Party & Occasion
                 </Link>
               </li>
               <li>
@@ -114,7 +197,7 @@ const Footer = () => {
                   href="#"
                   className="hover:text-orange-500 transition-colors"
                 >
-                  Medical Checkup
+                  Editorial & Fashion
                 </Link>
               </li>
               <li>
@@ -122,15 +205,7 @@ const Footer = () => {
                   href="#"
                   className="hover:text-orange-500 transition-colors"
                 >
-                  Diagnostic Center
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  Outdoor Checkup
+                  Hair & Styling
                 </Link>
               </li>
             </ul>
@@ -163,68 +238,6 @@ const Footer = () => {
                   Contact Us
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  Latest News
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  Our Sitemap
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-[16px] font-bold mb-6">Our Stores</h3>
-            <ul className="space-y-3.5 text-[13px] font-medium text-gray-300">
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  New York
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  London SF
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  Edinburgh
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  Los Angeles
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  Las Vegas
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -233,7 +246,15 @@ const Footer = () => {
             <ul className="space-y-3.5 text-[13px] font-medium text-gray-300">
               <li>
                 <Link
-                  href="#"
+                  href="/"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/About"
                   className="hover:text-orange-500 transition-colors"
                 >
                   About Us
@@ -241,31 +262,15 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/Academy"
                   className="hover:text-orange-500 transition-colors"
                 >
-                  Our Services
+                  Academy
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  Our Team
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  Appointments
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
+                  href="/Contact"
                   className="hover:text-orange-500 transition-colors"
                 >
                   Contact Us
@@ -280,7 +285,7 @@ const Footer = () => {
           <div className="flex-1 text-center lg:text-left">
             <h3 className="text-[20px] font-bold mb-1">Get in Touch with us</h3>
             <p className="text-gray-400 text-[13px]">
-              Lorem Ipsum is simply dummy
+              Have any questions or want to book an appointment?
             </p>
           </div>
 
@@ -304,7 +309,7 @@ const Footer = () => {
               <div className="text-left">
                 <h4 className="font-bold text-[14px] mb-0.5">Send us a Mail</h4>
                 <p className="text-gray-400 text-[12px] tracking-wide">
-                  info@example.com
+                  info@sachmakeover.com
                 </p>
               </div>
             </div>
@@ -316,7 +321,7 @@ const Footer = () => {
               <div className="text-left">
                 <h4 className="font-bold text-[14px] mb-0.5">Opening Time</h4>
                 <p className="text-gray-400 text-[12px] tracking-wide">
-                  Mon - Sat: 7:00 - 17:00
+                  Mon - Sat: 9:00 - 20:00
                 </p>
               </div>
             </div>
@@ -355,6 +360,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <Popup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </footer>
   );
 };

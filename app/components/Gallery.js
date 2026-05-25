@@ -88,7 +88,7 @@ export default function Gallery() {
 
   return (
     <div className=" bg-[#FFF8EE]">
-      <section className="py-24 px-4 md:px-8 max-w-[1000px] mx-auto">
+      <section className="py-24 px-4 md:px-8 max-w-[1400px] mx-auto">
         <style>
           {`
           @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
@@ -100,7 +100,7 @@ export default function Gallery() {
 
         {/* Header section */}
         <div className="relative text-center mb-16 flex flex-col items-center justify-center">
-          <h2 className="absolute text-7xl md:text-[10rem] text-gray-120 font-cursive tracking-wider z-0 whitespace-nowrap select-none -translate-y-8">
+          <h2 className="absolute text-5xl sm:text-7xl md:text-[10rem] text-gray-120 font-cursive tracking-wider z-0 whitespace-nowrap select-none -translate-y-8">
             Sach Study
           </h2>
           <div className="relative z-10">
