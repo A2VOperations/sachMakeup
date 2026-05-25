@@ -9,7 +9,6 @@ import ChooseUs from '../../components/ChooseUs'
 const page = () => {
   return (
     <>
-    <AboutMe />
     <Section2 />
     <Gallery />
     <ChooseUs />
