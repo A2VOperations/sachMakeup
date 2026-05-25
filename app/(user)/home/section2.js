@@ -27,7 +27,7 @@ const Section2 = () => {
           <div className="relative z-10 w-full aspect-[4/5] bg-gray-200 shadow-sm">
             <Image
               src="/photos/img (37).jpg"
-              alt="Woman touching face"
+              alt="Flawless professional makeup application"
               className="w-full h-full object-cover"
               width={500}
               height={500}
@@ -46,13 +46,13 @@ const Section2 = () => {
                   id="circlePath"
                   d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                   fill="transparent"
-                />
+                  />
                 <text
-                  className="text-[12px] font-bold tracking-[0.24em] uppercase"
+                  className="text-[11px] font-bold tracking-[0.22em] uppercase"
                   fill="currentColor"
                 >
                   <textPath href="#circlePath" startOffset="0%">
-                    More Collection • Explore • More Collection • Explore •
+                    Glamour Studio • Book Now • Glamour Studio • Book Now •
                   </textPath>
                 </text>
               </svg>
@@ -75,20 +75,18 @@ const Section2 = () => {
         {/* Right Column: Text Content */}
         <div className="relative flex flex-col gap-6 lg:gap-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] leading-[1.2] font-extrabold tracking-tight">
-            Beyond Skin Deep Personalized Care For Your Unique Beauty Journey
-            Description At ClinicMaster
+            Elevate Your Glamour Bespoke Artistry For Your Unique Style Journey
+            At Sach Makeover
           </h2>
 
           <p className="text-base md:text-[17px] text-gray-500 leading-relaxed max-w-2xl font-light">
-            We believe healthy, radiant skin is achievable for everyone. We
-            combine advanced dermatology with innovative cosmetic solutions to
-            address your unique skin concerns. Our team of board-certified
-            dermatologists and experienced aestheticians create personalized
-            treatment plans to achieve your desired results, whether it&apos;s
-            treating acne, restoring sun damage, or enhancing your natural
-            beauty. Explore our website to learn more about our services and
-            discover the confidence that comes with feeling your best in your
-            own skin.
+            We believe your face is a unique canvas meant to be celebrated. We 
+            combine premium, luxury cosmetics with innovative application techniques to 
+            accentuate your natural features. Our team of certified makeup artists and 
+            bridal stylists create personalized looks tailored to your personality—whether 
+            it&apos;s a timeless bridal glow, a high-fashion editorial look, or effortless 
+            evening glam. Explore our studio services and discover the confidence that 
+            comes with a flawless, professional makeover.
           </p>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full mt-2 gap-8">
@@ -102,35 +100,35 @@ const Section2 = () => {
                     <Image
                       src="/photos/img (14).webp"
                       className="w-9 h-9 rounded-full border-2 border-[#FFF8EE] object-cover"
-                      alt="doctor"
+                      alt="makeup artist"
                       width={110}
                       height={110}
                     />
                     <Image
                       src="/photos/img (15).webp"
                       className="w-9 h-9 rounded-full border-2 border-[#FFF8EE] object-cover"
-                      alt="doctor"
+                      alt="makeup artist"
                       width={110}
                       height={110}
                     />
                     <Image
                       src="/photos/img (16).webp"
                       className="w-9 h-9 rounded-full border-2 border-[#FFF8EE] object-cover"
-                      alt="doctor"
+                      alt="makeup artist"
                       width={110}
                       height={110}
                     />
                     <Image
                       src="/photos/img (17).webp"
                       className="w-9 h-9 rounded-full border-2 border-[#FFF8EE] object-cover"
-                      alt="doctor"
+                      alt="makeup artist"
                       width={110}
                       height={110}
                     />
                   </div>
                   <div className="w-[1px] h-6 bg-gray-300"></div>
                   <span className="text-sm md:text-[15px] font-semibold text-[#0A2647]">
-                    Talk to over 215 doctor
+                    Consult our 25+ top artists
                   </span>
                 </div>
 
@@ -168,10 +166,10 @@ const Section2 = () => {
                   ))}
                 </div>
                 <span className="text-sm font-bold text-[#0A2647] ml-1">
-                  (4.8)
+                  (4.9)
                 </span>
                 <span className="text-sm text-gray-500 font-medium">
-                  12k+ ratings on google
+                  12k+ reviews on google
                 </span>
               </div>
             </div>
@@ -180,17 +178,17 @@ const Section2 = () => {
             <div className="relative w-48 h-32 hidden lg:block shrink-0">
               <Image
                 src="/photos/img (18).webp"
-                alt="acne"
-                className="absolute right-16 top-0 w-[110px] h-[110px] object-cover border-[6px] border-white shadow-lg transform -rotate-[15deg] z-0"
-                width={110}
-                height={110}
+                alt="eyeshadow palette detail"
+                className="absolute right-23 top-0 w-[150px] h-[150px] object-cover border-[6px] border-white shadow-lg transform -rotate-[15deg] z-0"
+                width={150}
+                height={150}
               />
               <Image
                 src="/photos/img (19).webp"
-                alt="skin"
-                className="absolute right-0 top-4 w-28 h-28 object-cover border-[6px] border-[#FFF8EE] shadow-xl transform rotate-[10deg] z-10"
-                width={110}
-                height={110}
+                alt="glam transformation preview"
+                className="absolute right-0 top-4 w-[150px] h-[150px] object-cover border-[6px] border-[#FFF8EE] shadow-xl transform rotate-[10deg] z-10"
+                width={150}
+                height={150}
               />
             </div>
           </div>

@@ -3,89 +3,90 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FiArrowUpRight, FiCalendar } from "react-icons/fi";
 import { FaCheckCircle } from "react-icons/fa";
+import Link from "next/link";
 
 const services = [
   {
     id: "01",
-    title: "Cosmetic Dermatology",
+    title: "Bridal Couture Makeup",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "Crafting a breathtaking, high-definition look tailored to your unique features, ensuring you look absolutely radiant under any lighting on your special day.",
     features: [
-      "Excellent Laporatery",
-      "World Class Infrastructure",
-      "Health Checkups",
+      "Waterproof & 16-Hour Wear Tech",
+      "Airbrush & HD Premium Finish",
+      "Pre-Wedding Trial & Consultation",
     ],
     doctor: {
-      name: "Nashid Martines",
-      specialty: "Cardiac Surgery",
+      name: "Elena Rostova",
+      specialty: "Master Bridal Stylist",
       image: "/photos/img (20).webp",
     },
     image: "/photos/img (21).webp",
   },
   {
     id: "02",
-    title: "Dermatologic Surgery",
+    title: "Celebrity & Editorial Glam",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "High-fashion, camera-ready artistry designed for red carpets, photoshoots, and runway events, utilizing luxury pro-grade cosmetics.",
     features: [
-      "Excellent Laporatery",
-      "World Class Infrastructure",
-      "Health Checkups",
+      "Strobe & Sculpt Contouring",
+      "Editorial Concept Design",
+      "On-Site Touch-Up Assistance",
     ],
     doctor: {
-      name: "Nashid Martines",
-      specialty: "Cardiac Surgery",
+      name: "Marcus Vance",
+      specialty: "Creative Fashion Director",
       image: "/photos/img (22).webp",
     },
     image: "/photos/img (23).webp",
   },
   {
     id: "03",
-    title: "Earlobe Repair",
+    title: "Airbrush Flawless Finish",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "An ultra-lightweight, micro-sprayed foundation technique that minimizes pores and textures for a smooth, porcelain complexion.",
     features: [
-      "Excellent Laporatery",
-      "World Class Infrastructure",
-      "Health Checkups",
+      "Hypoallergenic Silicone Base",
+      "Completely Smudge-Proof",
+      "Perfect for Sensitive Skin",
     ],
     doctor: {
-      name: "Nashid Martines",
-      specialty: "Cardiac Surgery",
+      name: "Elena Rostova",
+      specialty: "Airbrush Specialist",
       image: "/photos/img (24).webp",
     },
     image: "/photos/img (25).webp",
   },
   {
     id: "04",
-    title: "Laser Resurfacing",
+    title: "Lash Architecture & Brows",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "Bespoke eyebrow sculpting and custom faux lash mapping designed to elevate your gaze and frame your face structure beautifully.",
     features: [
-      "Excellent Laporatery",
-      "World Class Infrastructure",
-      "Health Checkups",
+      "Custom Silk Lash Map",
+      "Precision 3D Brow Shaping",
+      "Premium Semi-Permanent Tints",
     ],
     doctor: {
-      name: "Nashid Martines",
-      specialty: "Cardiac Surgery",
+      name: "Sasha Grey",
+      specialty: "Brow & Lash Architect",
       image: "/photos/img (26).webp",
     },
     image: "/photos/img (27).webp",
   },
   {
     id: "05",
-    title: "Anti Aging",
+    title: "Luxury Event Makeover",
     description:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "Whether it's a gala, private party, or executive dinner, experience a personalized style makeover that enhances your natural elegance.",
     features: [
-      "Excellent Laporatery",
-      "World Class Infrastructure",
-      "Health Checkups",
+      "Custom Undertone Color-Match",
+      "Luxury Segment Products Only",
+      "Includes Express Skin Prep",
     ],
     doctor: {
-      name: "Nashid Martines",
-      specialty: "Cardiac Surgery",
+      name: "Marcus Vance",
+      specialty: "Senior Glam Artist",
       image: "/photos/img (28).webp",
     },
     image: "/photos/img (29).webp",
@@ -101,12 +102,12 @@ const Section5 = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-[#1c325b] mb-4">
-            Transform Your Skin With Our <br className="hidden md:block" />{" "}
-            Advanced Dermatology Treatments
+            Unveil Your Signature Look With Our <br className="hidden md:block" />{" "}
+            Premium & Extraordinary Artistry
           </h2>
           <p className="text-slate-500 text-base md:text-lg">
-            Experience a transformative journey that sculpts your physique and
-            unlocks your full potential.
+            Experience a transformative beauty journey tailored to celebrate your 
+            finest features and unleash your inner confidence.
           </p>
         </div>
 
@@ -138,7 +139,7 @@ const Section5 = () => {
                       <div className="absolute bottom-4 left-4 right-4 bg-white rounded-xl p-3 flex items-center justify-center gap-2 shadow-sm hover:bg-orange-50 transition-colors">
                         <FiCalendar className="text-[#f97316] text-lg" />
                         <span className="text-sm font-semibold text-[#1c325b]">
-                          Book An appointment
+                          Reserve A Session
                         </span>
                       </div>
                     </div>
@@ -229,11 +230,11 @@ const Section5 = () => {
         </div>
 
         {/* Footer line with button */}
-        <div className="flex items-center justify-center relative mt-16 max-w-4xl mx-auto">
+        <div className="flex items-center justify-center relative max-w-4xl mx-auto">
           <div className="absolute w-full h-[1px] bg-[#e6ddd0]"></div>
-          <button className="relative z-10 bg-[#fcf6ee] border border-[#d4c9bd] rounded-full px-8 py-2.5 text-sm font-semibold text-[#1c325b] hover:bg-white hover:shadow-sm transition-all">
+          <Link href="#services" className="relative z-10 bg-[#fcf6ee] border border-[#d4c9bd] rounded-full px-8 py-2.5 text-sm font-semibold text-[#1c325b] hover:bg-white hover:shadow-sm transition-all">
             View All Services
-          </button>
+          </Link>
         </div>
       </div>
     </section>
