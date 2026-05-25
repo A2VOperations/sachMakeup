@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Section1 = () => {
   return (
-    <section className="relative w-full min-h-screen bg-[#FFF8EE] overflow-hidden flex justify-between font-sans text-[#0A2647]">
+    <section className="relative w-full min-h-screen bg-[#FFF8EE] overflow-hidden flex justify-around font-sans text-[#0A2647]">
       {/* Left Sidebar - Social Links */}
       <div className="hidden md:flex flex-col items-center justify-between w-16 border-r border-[#EADAC5] py-12 shrink-0 z-20 bg-[#FFF8EE]">
         <div className="flex-1 relative w-full flex items-start justify-center mt-32">
@@ -37,7 +38,7 @@ const Section1 = () => {
       </div>
 
       {/* Main Content Area */}
-      <div className="flex-1 relative flex flex-col justify-around items-center lg:flex-row pt-10 md:pt-0">
+      <div className="flex-1 relative flex flex-col justify-around items-center lg:flex-row pt-10 md:pt-0 px-4 sm:px-8 md:px-12 lg:px-0">
         {/* Background Decorative Elements */}
         {/* Thin curved lines (simulated with SVG) */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20 z-0">
@@ -81,7 +82,7 @@ const Section1 = () => {
         </div>
 
         {/* Top small avatar */}
-        <div className=" absolute top-15 left-20 w-35 h-35 rounded-full overflow-hidden mb-8 border-[6px] border-[#F2E5D5] shadow-sm ml-4">
+        <div className="hidden sm:block absolute top-12 left-12 lg:top-16 lg:left-20 w-32 h-32 md:w-36 md:h-36 rounded-full overflow-hidden mb-8 border-[6px] border-[#F2E5D5] shadow-sm ml-4">
           <Image
             src="/photos/img (20).webp"
             alt="Small avatar"
@@ -92,7 +93,7 @@ const Section1 = () => {
 
         {/* Left Side (Text content) */}
         <div className="relative">
-          <h1 className="text-6xl lg:text-8xl font-normal leading-[1.1] text-[#0A2647] max-w-2xl tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] text-[#0A2647] max-w-2xl tracking-tight">
             Skincare is Like <br />
             A Workout For <br />
             Your Skin
@@ -106,7 +107,7 @@ const Section1 = () => {
           </div>
 
           <div className="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-8">
-            <button className="bg-[#F47514] text-white pl-6 pr-2 py-2 rounded-full flex items-center gap-4 hover:bg-[#d56612] transition-all shadow-lg shadow-orange-500/30">
+            <Link href="/Contact" className="bg-[#F47514] text-white pl-6 pr-2 py-2 rounded-full flex items-center gap-4 hover:bg-[#d56612] transition-all shadow-lg shadow-orange-500/30">
               <span className="font-semibold text-sm">Appointment</span>
               <span className="bg-white text-[#F47514] w-10 h-10 rounded-full flex items-center justify-center shadow-sm">
                 <svg
@@ -122,7 +123,7 @@ const Section1 = () => {
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </span>
-            </button>
+            </Link>
 
             {/* Avatars */}
             <div className="flex items-center">
@@ -161,21 +162,21 @@ const Section1 = () => {
         </div>
 
         {/* Right Side (Main Model & Decorative elements) */}
-        <div className="relative ">
+        <div className="relative w-full max-w-[320px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[800px]">
           {/* Main model image */}
-          <div className="relative  z-10 bottom-0 ">
+          <div className="relative z-10 bottom-0 w-full h-auto">
             <Image
               src="/images/main_model.png"
               alt="Beautiful woman with clear skin"
               width={800}
               height={800}
-              className="object-contain object-bottom"
+              className="w-full h-auto object-contain object-bottom"
               priority
             />
           </div>
 
           {/* Circular Play Button "EXPLORE MORE COLLECTION" */}
-          <div className="absolute bottom-24 right-10 lg:right-[10%] z-20 w-32 h-32 lg:w-36 lg:h-36 rounded-full bg-white/70 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.08)] flex items-center justify-center group cursor-pointer hover:bg-white/90 transition-all border border-white/40">
+          <div className="absolute bottom-16 right-4 sm:bottom-24 sm:right-10 lg:right-[10%] z-20 w-24 h-24 lg:w-36 lg:h-36 rounded-full bg-white/70 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.08)] flex items-center justify-center group cursor-pointer hover:bg-white/90 transition-all border border-white/40">
             <div className="absolute w-full h-full animate-[spin_12s_linear_infinite]">
               {/* Circular Text SVG */}
               <svg
@@ -198,12 +199,13 @@ const Section1 = () => {
               </svg>
             </div>
             {/* Play Icon */}
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-[#0A2647] rounded-full flex items-center justify-center text-white pl-1 group-hover:scale-110 transition-transform shadow-md">
+            <div className="w-8 h-8 lg:w-12 lg:h-12 bg-[#0A2647] rounded-full flex items-center justify-center text-white pl-1 group-hover:scale-110 transition-transform shadow-md">
               <svg
-                width="18"
-                height="18"
+                width="14"
+                height="14"
                 viewBox="0 0 24 24"
                 fill="currentColor"
+                className="lg:w-[18px] lg:h-[18px]"
               >
                 <path d="M5 3l14 9-14 9V3z" />
               </svg>
@@ -212,7 +214,7 @@ const Section1 = () => {
         </div>
 
         {/* Floating images bottom left */}
-        <div className="absolute left-0 bottom-10 w-[130px] h-[190px] rounded-tr-4xl rounded-br-4xl overflow-hidden shadow-xl hidden lg:block ">
+        <div className="absolute left-0 bottom-0 w-[100px] h-[150px] rounded-tr-4xl rounded-br-4xl overflow-hidden shadow-xl hidden lg:block ">
           <Image
             src="/photos/img (21).webp"
             alt="Arched image"
@@ -221,7 +223,7 @@ const Section1 = () => {
           />
         </div>
 
-        <div className="absolute left-[40%] bottom-20 w-[130px] h-[130px] overflow-hidden shadow-lg hidden lg:block rounded-br-full rounded-tl-none rounded-tr-xl rounded-bl-none">
+        <div className="absolute left-[25%] bottom-10 w-[130px] h-[130px] overflow-hidden shadow-lg hidden lg:block rounded-br-full rounded-tl-none rounded-tr-xl rounded-bl-none">
           <Image
             src="/photos/img (22).webp"
             alt="Square image"

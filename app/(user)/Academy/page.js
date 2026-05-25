@@ -7,13 +7,13 @@ import Accadmy1 from "./accadmy1";
 
 const page = () => {
   return (
-    <div>
+    <>
       <Accadmy2 />
       <Section7 />
       <Accadmy3 />
       <Accadmy4 />
       <Accadmy1 />
-    </div>
+    </>
   );
 };
 

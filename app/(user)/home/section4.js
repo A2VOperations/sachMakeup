@@ -4,7 +4,7 @@ const Section4 = () => {
   return (
     <>
       {" "}
-      <section className="overflow-hidden bg-[#FFF8EE] py-8 sm:py-10">
+      <section className="font-aldrich overflow-hidden bg-[#FFF8EE]">
         <div className="flex w-max animate-marquee ">
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex whitespace-nowrap ">

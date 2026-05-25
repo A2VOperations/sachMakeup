@@ -66,11 +66,11 @@ export default function Section7() {
       </div>
 
       {/* Courses Grid */}
-      <div className="w-full flex flex-col md:flex-row h-auto md:h-[500px]">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:flex md:flex-row h-auto md:h-[500px]">
         {courses.map((course, index) => (
           <div
             key={index}
-            className="relative w-full md:w-1/5 h-[400px] md:h-full group overflow-hidden cursor-pointer"
+            className="relative w-full md:w-1/5 h-[350px] sm:h-[400px] md:h-full group overflow-hidden cursor-pointer"
           >
             <Image
               src={course.image}
@@ -79,7 +79,7 @@ export default function Section7() {
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#f9eae7] via-[#f9eae7]/60 to-transparent pointer-events-none transition-opacity duration-500 opacity-90 group-hover:opacity-100"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-[#f9eae7] via-[#f9eae7]/60 to-transparent pointer-events-none transition-opacity duration-500 opacity-90 group-hover:opacity-100"></div>
 
             {/* Content */}
             <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end text-gray-900 transition-transform duration-300">
@@ -101,7 +101,7 @@ export default function Section7() {
       </div>
 
       {/* Bottom Features Bar */}
-      <div className="bg-[#FFF8EE] py-16 px-4 md:px-0 flex flex-col md:flex-row justify-center items-start md:items-stretch divide-y md:divide-y-0 md:divide-x divide-gray-300 w-full">
+      <div className="bg-[#FFF8EE] py-16 px-4 md:px-0 flex flex-col md:flex-row justify-center items-center md:items-stretch divide-y md:divide-y-0 md:divide-x divide-gray-300 w-full">
         <div className="px-6 md:px-12 py-8 md:py-0 flex flex-col items-center text-center max-w-[280px] w-full group">
           <div className="mb-5 text-gray-600 group-hover:-translate-y-1 transition-transform duration-300">
             <PiPaintBrushLight size={64} />
