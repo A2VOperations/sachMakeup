@@ -7,7 +7,7 @@ const Popup = ({ isOpen, onClose }) => {
 
   return (
     <>
-      <div className="fixed inset-0 w-screen h-screen bg-black/50 backdrop-blur-[3px] flex justify-center items-center z-[99999] p-5" onClick={onClose}>
+      <div className="fixed inset-0 w-screen h-screen bg-black/50 backdrop-blur-[3px] flex justify-center items-center z-99999 p-5" onClick={onClose}>
         <div className="relative w-full max-w-[420px] animate-[slideUp_0.3s_ease-out]" onClick={(e) => e.stopPropagation()}>
           <button className="absolute top-[15px] right-[15px] cursor-pointer z-10 text-[#F26D21] bg-transparent border-none p-[5px] flex items-center justify-center rounded-full transition-all duration-300 hover:bg-[#F26D21]/10" onClick={onClose} aria-label="Close popup">
             <X size={24} />

@@ -10,7 +10,7 @@ const Section2 = () => {
           {/* Background Decorative Line */}
           <div className="absolute -top-6 -left-6 md:-left-8 -bottom-10 w-[50%] border-l-[1.5px] border-b-[1.5px] border-[#0A2647] rounded-bl-[40px] pointer-events-none">
             {/* Star Icon */}
-            <div className="absolute -left-[14px] bottom-10 bg-[#FFF8EE] py-2">
+            <div className="absolute left-[-14px] bottom-10 bg-[#FFF8EE] py-2">
               <svg
                 width="26"
                 height="26"
@@ -24,7 +24,7 @@ const Section2 = () => {
           </div>
 
           {/* Main Image */}
-          <div className="relative z-10 w-full aspect-[4/5] bg-gray-200 shadow-sm">
+          <div className="relative z-10 w-full aspect-4/5 bg-gray-200 shadow-sm">
             <Image
               src="/photos/img (37).jpg"
               alt="Flawless professional makeup application"
@@ -126,7 +126,7 @@ const Section2 = () => {
                       height={110}
                     />
                   </div>
-                  <div className="w-[1px] h-6 bg-gray-300"></div>
+                  <div className="w-px h-6 bg-gray-300"></div>
                   <span className="text-sm md:text-[15px] font-semibold text-[#0A2647]">
                     Consult our 25+ top artists
                   </span>
@@ -179,14 +179,14 @@ const Section2 = () => {
               <Image
                 src="/photos/img (18).webp"
                 alt="eyeshadow palette detail"
-                className="absolute right-23 top-0 w-[150px] h-[150px] object-cover border-[6px] border-white shadow-lg transform -rotate-[15deg] z-0"
+                className="absolute right-23 top-0 w-[150px] h-[150px] object-cover border-[6px] border-white shadow-lg transform rotate-[-15deg] z-0"
                 width={150}
                 height={150}
               />
               <Image
                 src="/photos/img (19).webp"
                 alt="glam transformation preview"
-                className="absolute right-0 top-4 w-[150px] h-[150px] object-cover border-[6px] border-[#FFF8EE] shadow-xl transform rotate-[10deg] z-10"
+                className="absolute right-0 top-4 w-[150px] h-[150px] object-cover border-[6px] border-[#FFF8EE] shadow-xl transform rotate-10 z-10"
                 width={150}
                 height={150}
               />

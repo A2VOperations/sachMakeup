@@ -14,7 +14,7 @@ export default function AboutMe() {
               className="absolute w-[250px] h-[250px] rounded-full border-2 border-dashed border-orange-300/90 animate-spin"
               style={{ animationDuration: "30s" }}
             >
-              <div className="absolute inset-0 rotate-[210deg]">
+              <div className="absolute inset-0 rotate-210">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#ea580c] rounded-full shadow-[0_0_12px_rgba(234,88,12,0.8)]"></div>
               </div>
             </div>
@@ -26,7 +26,7 @@ export default function AboutMe() {
                 animationDirection: "reverse",
               }}
             >
-              <div className="absolute inset-0 rotate-[300deg]">
+              <div className="absolute inset-0 rotate-300">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#f97316] rounded-full"></div>
               </div>
             </div>
@@ -47,7 +47,7 @@ export default function AboutMe() {
                 animationDirection: "reverse",
               }}
             >
-              <div className="absolute inset-0 rotate-[70deg]">
+              <div className="absolute inset-0 rotate-70">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#fdba74] rounded-full"></div>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function AboutMe() {
               className="absolute w-[650px] h-[650px] rounded-full border border-dashed border-orange-300/40 animate-spin"
               style={{ animationDuration: "90s" }}
             >
-              <div className="absolute inset-0 rotate-[240deg]">
+              <div className="absolute inset-0 rotate-240">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2.5 h-2.5 bg-[#fdba74] rounded-full"></div>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function AboutMe() {
           </div>
 
           {/* Main Image */}
-          <div className="relative z-10 w-full max-w-[320px] sm:max-w-[400px] md:max-w-[450px] aspect-[3/4] md:aspect-auto md:h-[600px] flex justify-center items-end">
+          <div className="relative z-10 w-full max-w-[320px] sm:max-w-[400px] md:max-w-[450px] aspect-3/4 md:aspect-auto md:h-[600px] flex justify-center items-end">
             <Image
               src="/images/main_model-removebg-preview.png"
               alt="Dr. Nashid Martines"
@@ -92,7 +92,7 @@ export default function AboutMe() {
             {/* ClinicMaster Badge */}
             <div className="absolute bottom-10 -right-2 sm:-right-4 md:-right-8 bg-white rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] p-3 sm:p-5 flex items-center gap-2 sm:gap-4 z-20 hover:scale-105 transition-transform duration-300">
               {/* Hexagon WHO Logo Placeholder */}
-              <div className="w-16 h-16 flex-shrink-0 relative flex items-center justify-center">
+              <div className="w-16 h-16 shrink-0 relative flex items-center justify-center">
                 <svg
                   viewBox="0 0 100 100"
                   className="w-full h-full text-blue-900 absolute inset-0"

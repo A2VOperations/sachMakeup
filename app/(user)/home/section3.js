@@ -571,7 +571,7 @@ const Section3 = () => {
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-3 rounded-full text-base font-semibold transition-all cursor-pointer transform hover:scale-[1.03] active:scale-[0.98] duration-300 ${
                   isActive
-                    ? "bg-gradient-to-r from-[#f26d21] to-[#f05a11] text-white shadow-lg shadow-orange-500/30"
+                    ? "bg-linear-to-r from-[#f26d21] to-[#f05a11] text-white shadow-lg shadow-orange-500/30"
                     : "bg-white border border-gray-200 text-[#0A2647] hover:border-[#f26d21] hover:text-[#f26d21] shadow-sm"
                 }`}
               >
@@ -680,7 +680,7 @@ const Section3 = () => {
               <SwiperSlide key={service.id}>
                 <div className="bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100/80 p-5 flex flex-col group transition-all duration-300 transform hover:-translate-y-1 h-full w-full">
                   {/* Image Container with Zoom effect */}
-                  <div className="w-full mb-5 aspect-[4/3] bg-linear-to-br from-[#fdf7ed] to-[#fbf1e0] rounded-xl overflow-hidden relative flex-shrink-0">
+                  <div className="w-full mb-5 aspect-4/3 bg-linear-to-br from-[#fdf7ed] to-[#fbf1e0] rounded-xl overflow-hidden relative shrink-0">
                     <Image
                       src={service.image}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -723,7 +723,7 @@ const Section3 = () => {
                               key={idx}
                               className="flex items-start gap-2.5 text-xs font-semibold text-slate-700 leading-snug"
                             >
-                              <FaCheckCircle className="text-[#f97316] text-[14px] mt-0.5 flex-shrink-0" />
+                              <FaCheckCircle className="text-[#f97316] text-[14px] mt-0.5 shrink-0" />
                               <span>{feature}</span>
                             </li>
                           ))}

@@ -46,8 +46,8 @@ const ChooseUs = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-4 mb-12">
             {features.map((feature, index) => (
               <div key={index} className="flex items-center gap-3">
-                <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#f26d21] text-white flex items-center justify-center shadow-sm shadow-orange-500/30">
-                  <Check className="w-3.5 h-3.5 stroke-[3]" />
+                <div className="shrink-0 w-5 h-5 rounded-full bg-[#f26d21] text-white flex items-center justify-center shadow-sm shadow-orange-500/30">
+                  <Check className="w-3.5 h-3.5 stroke-3" />
                 </div>
                 <span className="text-[#0A2647] font-bold text-[15px]">
                   {feature}
@@ -84,7 +84,7 @@ const ChooseUs = () => {
         </div>
 
         {/* Right Content - Images */}
-        <div className="relative w-full aspect-[4/5] md:aspect-square lg:h-[650px] flex mt-10 lg:mt-0">
+        <div className="relative w-full aspect-4/5 md:aspect-square lg:h-[650px] flex mt-10 lg:mt-0">
           {/* Doctor Image Container */}
           <div className="absolute left-0 lg:left-4 top-0 w-[65%] sm:w-[60%] h-[75%] rounded-[2.5rem] overflow-hidden shadow-2xl z-0">
             <Image
@@ -100,7 +100,7 @@ const ChooseUs = () => {
               <Camera className="w-5 h-5 text-white" />
               <MessageSquare className="w-5 h-5 text-white" />
               <div className="bg-[#ff4b4b] rounded-full p-2.5 shadow-lg cursor-pointer hover:bg-red-600 transition-colors">
-                <Phone className="w-5 h-5 text-white fill-current rotate-[135deg]" />
+                <Phone className="w-5 h-5 text-white fill-current rotate-135" />
               </div>
               <Mic className="w-5 h-5 text-white" />
               <Monitor className="w-5 h-5 text-white" />
@@ -121,7 +121,7 @@ const ChooseUs = () => {
           {/* Video Call Support Badge */}
           <div className="absolute top-[35%] -left-2 sm:-left-6 lg:-left-12 z-20 bg-white rounded-[1.25rem] shadow-xl p-2.5 sm:p-4 flex items-center gap-2 sm:gap-4">
             <div className="text-[#f26d21] border-[1.5px] border-[#f26d21] rounded-xl p-2">
-              <Video className="w-6 h-6 stroke-[2]" />
+              <Video className="w-6 h-6 stroke-2" />
             </div>
             <p className="text-[#0A2647] font-bold text-[13px] sm:text-[15px] leading-[1.2]">
               Video Call
@@ -131,8 +131,8 @@ const ChooseUs = () => {
           </div>
 
           {/* Google Rating Badge */}
-          <div className="absolute top-4 -right-2 sm:-right-4 lg:-right-8 z-20 bg-white rounded-[1.5rem] shadow-xl p-3 sm:p-5 flex items-center gap-3 sm:gap-5 border border-gray-100">
-            <div className="w-12 h-12 flex-shrink-0">
+          <div className="absolute top-4 -right-2 sm:-right-4 lg:-right-8 z-20 bg-white rounded-3xl shadow-xl p-3 sm:p-5 flex items-center gap-3 sm:gap-5 border border-gray-100">
+            <div className="w-12 h-12 shrink-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 48 48"

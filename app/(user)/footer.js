@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#141d2e] text-white pt-16 pb-8 font-sans relative overflow-hidden">
       {/* Background Overlay (Subtle Gradient) */}
-      <div className="absolute inset-0 opacity-20 bg-gradient-to-tr from-[#141d2e] via-[#1a253a] to-[#141d2e] pointer-events-none"></div>
+      <div className="absolute inset-0 opacity-20 bg-linear-to-tr from-[#141d2e] via-[#1a253a] to-[#141d2e] pointer-events-none"></div>
 
       <div className="container mx-auto px-4 md:px-8 max-w-[1200px] relative z-10">
         {/* Top Section */}
@@ -291,7 +291,7 @@ const Footer = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 md:gap-10 flex-2 items-center lg:items-start w-full lg:w-auto justify-center">
             <div className="flex items-center gap-3">
-              <div className="w-[44px] h-[44px] rounded-full bg-[#f97316] flex items-center justify-center text-white text-lg flex-shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
+              <div className="w-[44px] h-[44px] rounded-full bg-[#f97316] flex items-center justify-center text-white text-lg shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
                 <FaPhoneAlt size={16} />
               </div>
               <div className="text-left">
@@ -303,7 +303,7 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="w-[44px] h-[44px] rounded-full bg-[#f97316] flex items-center justify-center text-white text-lg flex-shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
+              <div className="w-[44px] h-[44px] rounded-full bg-[#f97316] flex items-center justify-center text-white text-lg shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
                 <FaEnvelope size={16} />
               </div>
               <div className="text-left">
@@ -315,7 +315,7 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="w-[44px] h-[44px] rounded-full bg-[#f97316] flex items-center justify-center text-white text-lg flex-shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
+              <div className="w-[44px] h-[44px] rounded-full bg-[#f97316] flex items-center justify-center text-white text-lg shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
                 <FaClock size={16} />
               </div>
               <div className="text-left">
@@ -349,7 +349,7 @@ const Footer = () => {
               PayPal
             </div>
             <div className="h-[22px] w-[34px] bg-[#222222] rounded-[3px] flex items-center justify-center text-white border border-gray-700">
-              <div className="flex -space-x-[3px]">
+              <div className="flex space-x-[-3px]">
                 <div className="w-[10px] h-[10px] bg-[#EB001B] rounded-full opacity-90"></div>
                 <div className="w-[10px] h-[10px] bg-[#F79E1B] rounded-full opacity-90"></div>
               </div>

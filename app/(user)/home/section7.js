@@ -79,7 +79,7 @@ export default function Section7() {
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#f9eae7] via-[#f9eae7]/60 to-transparent pointer-events-none transition-opacity duration-500 opacity-90 group-hover:opacity-100"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-[#f9eae7] via-[#f9eae7]/60 to-transparent pointer-events-none transition-opacity duration-500 opacity-90 group-hover:opacity-100"></div>
 
             {/* Content */}
             <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end text-gray-900 transition-transform duration-300">

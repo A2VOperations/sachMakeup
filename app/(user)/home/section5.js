@@ -119,7 +119,7 @@ const Section5 = () => {
             return (
               <div
                 key={service.id}
-                className={`relative rounded-[24px] overflow-hidden transition-all duration-500 ease-in-out cursor-pointer flex-shrink-0 flex flex-col md:flex-row ${
+                className={`relative rounded-[24px] overflow-hidden transition-all duration-500 ease-in-out cursor-pointer shrink-0 flex flex-col md:flex-row ${
                   isActive
                     ? "h-auto md:h-full w-full md:w-[800px] bg-white shadow-sm"
                     : "h-[80px] md:h-full w-full md:w-[100px]"
@@ -129,7 +129,7 @@ const Section5 = () => {
                 {isActive ? (
                   <div className="w-full md:w-[800px] flex flex-col md:flex-row p-4 md:p-6 h-full">
                     {/* Left: Image */}
-                    <div className="relative w-full md:w-[360px] h-[300px] md:h-full rounded-[20px] overflow-hidden flex-shrink-0">
+                    <div className="relative w-full md:w-[360px] h-[300px] md:h-full rounded-[20px] overflow-hidden shrink-0">
                       <Image
                         src={service.image}
                         fill
@@ -189,7 +189,7 @@ const Section5 = () => {
                             </p>
                           </div>
                         </div>
-                        <button className="w-12 h-12 bg-[#f97316] rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors shadow-md flex-shrink-0">
+                        <button className="w-12 h-12 bg-[#f97316] rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors shadow-md shrink-0">
                           <FiArrowUpRight size={24} />
                         </button>
                       </div>
@@ -206,7 +206,7 @@ const Section5 = () => {
                     <div className="absolute inset-0 bg-[#2b4162]/85 group-hover:bg-[#2b4162]/75 transition-colors"></div>
 
                     <div className="absolute inset-0 flex flex-row md:flex-col items-center justify-between p-4 md:py-8 md:px-0">
-                      <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#1c325b] shadow-sm flex-shrink-0">
+                      <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#1c325b] shadow-sm shrink-0">
                         <FiArrowUpRight size={20} />
                       </div>
 
@@ -231,7 +231,7 @@ const Section5 = () => {
 
         {/* Footer line with button */}
         <div className="flex items-center justify-center relative max-w-4xl mx-auto">
-          <div className="absolute w-full h-[1px] bg-[#e6ddd0]"></div>
+          <div className="absolute w-full h-px bg-[#e6ddd0]"></div>
           <Link href="#services" className="relative z-10 bg-[#fcf6ee] border border-[#d4c9bd] rounded-full px-8 py-2.5 text-sm font-semibold text-[#1c325b] hover:bg-white hover:shadow-sm transition-all">
             View All Services
           </Link>

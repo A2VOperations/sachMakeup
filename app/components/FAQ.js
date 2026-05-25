@@ -128,7 +128,7 @@ const FAQ = () => {
                 </div>
 
                 {/* Vertical Divider */}
-                <div className="w-[1px] h-6 bg-[#F0E6D8]"></div>
+                <div className="w-px h-6 bg-[#F0E6D8]"></div>
 
                 {/* Text */}
                 <span className="text-xs md:text-sm font-semibold text-[#0F3057]">
@@ -159,7 +159,7 @@ const FAQ = () => {
 
         {/* Right Column: Skincare Treatment Image */}
         <div className="flex-1 w-full lg:max-w-lg">
-          <div className="relative w-full aspect-[4/5] rounded-[32px] md:rounded-[40px] overflow-hidden shadow-lg border border-[#F0E6D8]/40 bg-slate-100">
+          <div className="relative w-full aspect-4/5 rounded-[32px] md:rounded-[40px] overflow-hidden shadow-lg border border-[#F0E6D8]/40 bg-slate-100">
             <Image
               src="/photos/img (6).webp"
               alt="Skincare jade roller facial treatment"
