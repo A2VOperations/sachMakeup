@@ -92,7 +92,7 @@ export default function Testimonial() {
 
       {/* Arch Gallery */}
       <div className="w-full relative overflow-hidden pb-16">
-        <div className="flex justify-center items-center gap-1 sm:gap-2 md:gap-4 w-max mx-auto px-4 -mt-10 sm:-mt-0">
+        <div className="flex justify-center items-center gap-1 sm:gap-2 md:gap-4 w-max mx-auto px-4 -mt-10 sm:mt-0">
           {archImages.map((src, i) => {
             const x = i - (archImages.length - 1) / 2;
             const rot = x * 4;
@@ -100,7 +100,7 @@ export default function Testimonial() {
             return (
               <div
                 key={i}
-                className="relative w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 flex-shrink-0"
+                className="relative w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-48 xl:h-48 shrink-0"
                 style={{ transform: `rotate(${rot}deg) translateY(${ty}px)` }}
               >
                 <Image
@@ -181,7 +181,7 @@ export default function Testimonial() {
                 {/* Right Image Column */}
                 <div className="relative pb-6">
                   {/* The main image background / container */}
-                  <div className="relative w-full max-w-[400px] mx-auto md:mr-auto lg:mr-0 aspect-[4/5] rounded-[2rem] overflow-hidden bg-[#E2D4C8]">
+                  <div className="relative w-full max-w-[400px] mx-auto md:mr-auto lg:mr-0 aspect-4/5 rounded-4xl overflow-hidden bg-[#E2D4C8]">
                     <Image
                       src={testimonial.image}
                       alt="Patient testimonial"

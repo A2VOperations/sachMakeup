@@ -11,7 +11,7 @@ const CompareSlider = ({ beforeImage, afterImage }) => {
   };
 
   return (
-    <div className="relative w-full aspect-[4/5] sm:aspect-[4/4] md:aspect-[4/5] rounded-2xl md:rounded-3xl overflow-hidden group select-none shadow-lg">
+    <div className="relative w-full aspect-4/5 sm:aspect-4/4 md:aspect-4/5 rounded-2xl md:rounded-3xl overflow-hidden group select-none shadow-lg">
       {/* After Image (Background) */}
       <div className="absolute inset-0">
         <Image
@@ -58,8 +58,8 @@ const CompareSlider = ({ beforeImage, afterImage }) => {
       >
         {/* The Triangles */}
         <div className="flex items-center justify-between gap-1.5 drop-shadow-md">
-          <div className="w-0 h-0 border-t-[6px] border-t-transparent border-r-[8px] border-r-white border-b-[6px] border-b-transparent"></div>
-          <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[8px] border-l-white border-b-[6px] border-b-transparent"></div>
+          <div className="w-0 h-0 border-t-[6px] border-t-transparent border-r-8 border-r-white border-b-[6px] border-b-transparent"></div>
+          <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-8 border-l-white border-b-[6px] border-b-transparent"></div>
         </div>
       </div>
 

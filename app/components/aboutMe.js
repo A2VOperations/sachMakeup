@@ -14,7 +14,7 @@ export default function AboutMe() {
               className="absolute w-[250px] h-[250px] rounded-full border-2 border-dashed border-orange-300/90 animate-spin"
               style={{ animationDuration: "30s" }}
             >
-              <div className="absolute inset-0 rotate-[210deg]">
+              <div className="absolute inset-0 rotate-210">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#ea580c] rounded-full shadow-[0_0_12px_rgba(234,88,12,0.8)]"></div>
               </div>
             </div>
@@ -26,7 +26,7 @@ export default function AboutMe() {
                 animationDirection: "reverse",
               }}
             >
-              <div className="absolute inset-0 rotate-[300deg]">
+              <div className="absolute inset-0 rotate-300">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#f97316] rounded-full"></div>
               </div>
             </div>
@@ -35,7 +35,7 @@ export default function AboutMe() {
               className="absolute w-[450px] h-[450px] rounded-full border-2 border-dashed border-orange-300/50 animate-spin"
               style={{ animationDuration: "60s" }}
             >
-              <div className="absolute inset-0 rotate-[45deg]">
+              <div className="absolute inset-0 rotate-45">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#f97316] rounded-full"></div>
               </div>
             </div>
@@ -47,7 +47,7 @@ export default function AboutMe() {
                 animationDirection: "reverse",
               }}
             >
-              <div className="absolute inset-0 rotate-[70deg]">
+              <div className="absolute inset-0 rotate-70">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-[#fdba74] rounded-full"></div>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function AboutMe() {
               className="absolute w-[650px] h-[650px] rounded-full border border-dashed border-orange-300/40 animate-spin"
               style={{ animationDuration: "90s" }}
             >
-              <div className="absolute inset-0 rotate-[240deg]">
+              <div className="absolute inset-0 rotate-240">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2.5 h-2.5 bg-[#fdba74] rounded-full"></div>
               </div>
             </div>
@@ -71,28 +71,28 @@ export default function AboutMe() {
           </div>
 
           {/* Main Image */}
-          <div className="relative z-10 w-[350px] h-[500px] md:w-[450px] md:h-[600px] flex justify-center items-end">
+          <div className="relative z-10 w-full max-w-[320px] sm:max-w-[400px] md:max-w-[450px] aspect-3/4 md:aspect-auto md:h-[600px] flex justify-center items-end">
             <Image
-              src="/photos/img (1).webp"
+              src="/images/main_model-removebg-preview.png"
               alt="Dr. Nashid Martines"
               fill
               className="object-cover object-top mix-blend-multiply drop-shadow-lg filter contrast-125"
             />
             {/* 20+ Years Experienced Badge */}
-            <div className="absolute top-[40%] -left-4 md:-left-12 -translate-y-1/2 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-4 z-20 hover:scale-105 transition-transform duration-300">
-              <span className="text-[2.5rem] font-extrabold text-[#f97316] leading-none">
+            <div className="absolute top-[40%] -left-2 sm:-left-6 md:-left-12 -translate-y-1/2 bg-white rounded-2xl shadow-xl p-3 sm:p-5 flex items-center gap-2 sm:gap-4 z-20 hover:scale-105 transition-transform duration-300">
+              <span className="text-[2.5rem] sm:text-[2.5rem] font-extrabold text-[#f97316] leading-none">
                 20+
               </span>
-              <div className="flex flex-col text-sm font-bold text-[#1e293b] leading-tight">
+              <div className="flex flex-col text-xs sm:text-sm font-bold text-[#1e293b] leading-tight">
                 <span>Years</span>
                 <span>Experienced</span>
               </div>
             </div>
 
             {/* ClinicMaster Badge */}
-            <div className="absolute bottom-10 -right-4 md:-right-8 bg-white rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] p-5 flex items-center gap-4 z-20 hover:scale-105 transition-transform duration-300">
+            <div className="absolute bottom-10 -right-2 sm:-right-4 md:-right-8 bg-white rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] p-3 sm:p-5 flex items-center gap-2 sm:gap-4 z-20 hover:scale-105 transition-transform duration-300">
               {/* Hexagon WHO Logo Placeholder */}
-              <div className="w-16 h-16 flex-shrink-0 relative flex items-center justify-center">
+              <div className="w-16 h-16 shrink-0 relative flex items-center justify-center">
                 <svg
                   viewBox="0 0 100 100"
                   className="w-full h-full text-blue-900 absolute inset-0"
@@ -148,7 +148,7 @@ export default function AboutMe() {
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-[2.75rem] font-extrabold text-[#0f172a] tracking-tight leading-tight">
+          <h2 className="text-4xl md:text-[2.75rem] font-extrabold text-[#0f172a]">
             About Dr. Nashid Martines
           </h2>
 
