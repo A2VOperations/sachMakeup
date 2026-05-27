@@ -101,7 +101,7 @@ export default function Section7() {
       </div>
 
       {/* Bottom Features Bar */}
-      <div className="bg-[#FFF8EE] py-16 px-4 md:px-0 flex flex-col md:flex-row justify-center items-center md:items-stretch divide-y md:divide-y-0 md:divide-x divide-gray-300 w-full">
+      <div className="bg-[#FFF8EE] py-10 px-4 md:px-0 flex flex-col md:flex-row justify-center items-center md:items-stretch divide-y md:divide-y-0 md:divide-x divide-gray-300 w-full">
         <div className="px-6 md:px-12 py-8 md:py-0 flex flex-col items-center text-center max-w-[280px] w-full group">
           <div className="mb-5 text-gray-600 group-hover:-translate-y-1 transition-transform duration-300">
             <PiPaintBrushLight size={64} />

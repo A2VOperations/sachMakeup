@@ -1,6 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+
+/* First make sure that you have installed the package */
+
+/* If you are using yarn */
+// yarn add @calcom/embed-react
+
+/* If you are using npm */
+// npm install @calcom/embed-react
+
+import { getCalApi } from "@calcom/embed-react";
 import { FiArrowUpRight, FiCalendar } from "react-icons/fi";
 import { FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
@@ -96,6 +106,13 @@ const services = [
 const Section5 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({"namespace":"30min"});
+      cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    })();
+  }, []);
+
   return (
     <section className="bg-[#fcf6ee] py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
@@ -136,12 +153,20 @@ const Section5 = () => {
                         className="object-cover"
                         alt={service.title}
                       />
-                      <div className="absolute bottom-4 left-4 right-4 bg-white rounded-xl p-3 flex items-center justify-center gap-2 shadow-sm hover:bg-orange-50 transition-colors">
+                      <button
+                        data-cal-link="a2v-chakra-operations-ywesru/30min"
+                        data-cal-namespace="30min"
+                        data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                        onClick={(e) => {
+                          e.stopPropagation();
+                        }}
+                        className="absolute bottom-4 left-4 right-4 bg-white rounded-xl p-3 flex items-center justify-center gap-2 shadow-sm hover:bg-orange-50 transition-colors cursor-pointer w-[calc(100%-2rem)] border-none"
+                      >
                         <FiCalendar className="text-[#b89047] text-lg" />
                         <span className="text-sm font-semibold text-[#1c325b]">
                           Reserve A Session
                         </span>
-                      </div>
+                      </button>
                     </div>
 
                     {/* Right: Content */}
@@ -189,7 +214,7 @@ const Section5 = () => {
                             </p>
                           </div>
                         </div>
-                        <button className="w-12 h-12 bg-[#b89047] rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors shadow-md shrink-0">
+                        <button className="w-12 h-12 bg-[#b89047] rounded-full flex items-center justify-center text-white hover:bg-[#e3aa40] transition-colors shadow-md shrink-0">
                           <FiArrowUpRight size={24} />
                         </button>
                       </div>

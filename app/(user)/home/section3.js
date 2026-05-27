@@ -548,7 +548,7 @@ const Section3 = () => {
   return (
     <div
       id="services"
-      className="w-full px-4 py-24 bg-[#FFF8EE] font-sans text-[#0A2647] overflow-hidden"
+      className="w-full px-4 py-10 bg-[#FFF8EE] font-sans text-[#0A2647] overflow-hidden"
     >
       <div className="max-w-[1500px] mx-auto">
         {/* Header */}
