@@ -52,13 +52,13 @@ const Navbar = () => {
     : "bg-linear-to-r from-[#fdf7ed] to-[#fbf1e0] border-b border-[#f0e3ce] shadow-md";
 
   const linkTextClass = isTransparent
-    ? "text-white group-hover:text-[#f26d21]"
-    : "text-[#132c52] group-hover:text-[#f26d21]";
+    ? "text-white group-hover:text-[#b89047]"
+    : "text-[#132c52] group-hover:text-[#b89047]";
 
   const shurikenClass = `w-[14px] h-[14px] stroke-[3.5] transition-colors duration-300 ${
     isTransparent
-      ? "text-white/60 group-hover:text-[#f26d21]"
-      : "text-[#132c52]/60 group-hover:text-[#f26d21]"
+      ? "text-white/60 group-hover:text-[#b89047]"
+      : "text-[#132c52]/60 group-hover:text-[#b89047]"
   }`;
 
   const phoneIconClass = `w-[35px] h-[35px] animate-ring transition-colors duration-300 ${
@@ -75,8 +75,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`w-full h-[90px] fixed top-0 left-0 z-50 flex items-center justify-between px-4 md:px-20 lg:px-30 transition-all duration-300 ease-in-out ${navBgClass}`}>
-        {/* Logo Section */} 
+      <nav
+        className={`w-full h-[90px] fixed top-0 left-0 z-50 flex items-center justify-between px-4 md:px-20 lg:px-30 transition-all duration-300 ease-in-out ${navBgClass}`}
+      >
+        {/* Logo Section */}
         <div className="flex justify-between items-center gap-10">
           <div className="flex items-center space-x-3 cursor-pointer">
             {/* Logo Icon */}
@@ -97,7 +99,9 @@ const Navbar = () => {
                 key={idx}
                 className="flex items-center space-x-1.5 group"
               >
-                <span className={`font-medium text-[22px] transition-colors duration-300 ${linkTextClass}`}>
+                <span
+                  className={`font-medium text-[22px] transition-colors duration-300 ${linkTextClass}`}
+                >
                   {link.name}
                 </span>
                 <GiStarShuriken className={shurikenClass} />
@@ -110,33 +114,29 @@ const Navbar = () => {
         <div className="flex items-center space-x-4 md:space-x-8 lg:space-x-10">
           {/* Contact Info */}
           <div className="hidden md:flex items-center space-x-5">
-            <PhoneCall
-              className={phoneIconClass}
-              strokeWidth={2}
-            />
+            <a href="tel:+919971853904">
+              <PhoneCall className={phoneIconClass} strokeWidth={2} />
+            </a>
             <div className="flex flex-col leading-tight">
-              <span className="text-[#f26d21] text-[16px] font-semibold">
+              <span className="text-[#b89047] text-[16px] font-semibold">
                 Contact us?
               </span>
-              <span className={contactNumberClass}>
-                +1 123 456 7890
-              </span>
+              <a href="tel:+919971853904" className={contactNumberClass}>
+                +91 9971853904
+              </a>
             </div>
           </div>
 
           {/* Appointment Button */}
-          <button 
+          <button
             onClick={() => setIsPopupOpen(true)}
-            className="bg-[#f26d21] hover:bg-[#e05b10] text-white font-semibold text-[14px] md:text-[18px] py-2 px-4 md:py-3.5 md:px-7 rounded-xl md:rounded-2xl transition-colors duration-300 shadow-md shadow-orange-500/20"
+            className="bg-[#b89047] hover:bg-[#d19526] text-white font-semibold text-[14px] md:text-[18px] py-2 px-4 md:py-3.5 md:px-7 rounded-xl md:rounded-2xl transition-colors duration-300 shadow-md shadow-[#b89047]/20"
           >
             Appointment
           </button>
 
           {/* Mobile Menu Toggle */}
-          <button
-            className={menuToggleClass}
-            onClick={toggleMobileMenu}
-          >
+          <button className={menuToggleClass} onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? <X size={32} /> : <Menu size={32} />}
           </button>
         </div>
@@ -151,26 +151,31 @@ const Navbar = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="flex items-center space-x-1.5 group"
               >
-                <span className="text-[#132c52] font-medium text-[22px] group-hover:text-[#f26d21] transition-colors">
+                <span className="text-[#132c52] font-medium text-[22px] group-hover:text-[#b89047] transition-colors">
                   {link.name}
                 </span>
-                <GiStarShuriken className="w-[14px] h-[14px] text-[#132c52]/60 group-hover:text-[#f26d21] stroke-[3.5]" />
+                <GiStarShuriken className="w-[14px] h-[14px] text-[#132c52]/60 group-hover:text-[#b89047] stroke-[3.5]" />
               </Link>
             ))}
 
             {/* Mobile Contact Info */}
             <div className="flex md:hidden items-center space-x-3 pt-4 border-t border-[#f0e3ce]/50 w-3/4 justify-center">
-              <PhoneCall
-                className="w-[25px] h-[25px] text-[#132c52] animate-ring"
-                strokeWidth={2}
-              />
+              <a href="tel:+919971853904">
+                <PhoneCall
+                  className="w-[25px] h-[25px] text-[#132c52] animate-ring"
+                  strokeWidth={2}
+                />
+              </a>
               <div className="flex flex-col leading-tight">
-                <span className="text-[#f26d21] text-[14px] font-semibold">
+                <span className="text-[#b89047] text-[14px] font-semibold">
                   Contact us?
                 </span>
-                <span className="text-[#132c52] text-[16px] font-semibold">
-                  +1 123 456 7890
-                </span>
+                <a
+                  href="tel:+919971853904"
+                  className="text-[#132c52] text-[16px] font-semibold"
+                >
+                  +91 9971853904
+                </a>
               </div>
             </div>
           </div>

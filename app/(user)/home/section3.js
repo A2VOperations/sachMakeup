@@ -553,7 +553,7 @@ const Section3 = () => {
       <div className="max-w-[1500px] mx-auto">
         {/* Header */}
         <div className="mb-12 text-center md:text-left">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-orange-100 text-[#ea580c] text-[13px] font-bold tracking-wide mb-3">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-orange-100 text-[#b89047] text-[13px] font-bold tracking-wide mb-3">
             Our Service
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-[54px] font-extrabold leading-[1.2] tracking-tight">
@@ -571,8 +571,8 @@ const Section3 = () => {
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-3 rounded-full text-base font-semibold transition-all cursor-pointer transform hover:scale-[1.03] active:scale-[0.98] duration-300 ${
                   isActive
-                    ? "bg-linear-to-r from-[#f26d21] to-[#f05a11] text-white shadow-lg shadow-orange-500/30"
-                    : "bg-white border border-gray-200 text-[#0A2647] hover:border-[#f26d21] hover:text-[#f26d21] shadow-sm"
+                    ? "bg-linear-to-r from-[#b89047] to-[#f05a11] text-white shadow-lg shadow-[#b89047]/30"
+                    : "bg-white border border-gray-200 text-[#0A2647] hover:border-[#b89047] hover:text-[#b89047] shadow-sm"
                 }`}
               >
                 {category}
@@ -610,7 +610,7 @@ const Section3 = () => {
           }
           .services-swiper .swiper-pagination-bullet-active {
             width: 24px;
-            background-color: #f26d21;
+            background-color: #b89047;
             border-radius: 4px;
           }
         `,
@@ -620,7 +620,7 @@ const Section3 = () => {
         {/* Cards Swiper Slider Wrapper with Side Padding */}
         <div className="relative px-0 lg:px-14">
           {/* Custom Navigation Arrows */}
-          <button className="swiper-button-prev-custom absolute left-0 top-[45%] -translate-y-1/2 z-20 w-12 h-12 bg-white text-[#f26d21] rounded-full hidden lg:flex items-center justify-center shadow-md border border-orange-50 hover:bg-[#f26d21] hover:text-white transition-all duration-300 cursor-pointer">
+          <button className="swiper-button-prev-custom absolute left-0 top-[45%] -translate-y-1/2 z-20 w-12 h-12 bg-white text-[#b89047] rounded-full hidden lg:flex items-center justify-center shadow-md border border-orange-50 hover:bg-[#b89047] hover:text-white transition-all duration-300 cursor-pointer">
             <svg
               width="20"
               height="20"
@@ -634,7 +634,7 @@ const Section3 = () => {
               <path d="M15 18l-6-6 6-6" />
             </svg>
           </button>
-          <button className="swiper-button-next-custom absolute right-0 top-[45%] -translate-y-1/2 z-20 w-12 h-12 bg-white text-[#f26d21] rounded-full hidden lg:flex items-center justify-center shadow-md border border-orange-50 hover:bg-[#f26d21] hover:text-white transition-all duration-300 cursor-pointer">
+          <button className="swiper-button-next-custom absolute right-0 top-[45%] -translate-y-1/2 z-20 w-12 h-12 bg-white text-[#b89047] rounded-full hidden lg:flex items-center justify-center shadow-md border border-orange-50 hover:bg-[#b89047] hover:text-white transition-all duration-300 cursor-pointer">
             <svg
               width="20"
               height="20"
@@ -693,11 +693,11 @@ const Section3 = () => {
                   {/* Service Details */}
                   <div className="flex flex-col flex-1 gap-2">
                     <div className="flex items-center justify-between mb-1">
-                      <span className="text-[11px] font-bold tracking-wider text-[#ea580c] uppercase bg-orange-50 px-2.5 py-1 rounded-md">
+                      <span className="text-[11px] font-bold tracking-wider text-[#b89047] uppercase bg-orange-50 px-2.5 py-1 rounded-md">
                         {service.category}
                       </span>
                     </div>
-                    <h3 className="font-extrabold text-[#0A2647] text-lg lg:text-xl group-hover:text-[#f26d21] transition-colors duration-300">
+                    <h3 className="font-extrabold text-[#0A2647] text-lg lg:text-xl group-hover:text-[#b89047] transition-colors duration-300">
                       {service.title}
                     </h3>
                     <p className="text-gray-500 text-sm leading-relaxed mb-4">
@@ -709,7 +709,7 @@ const Section3 = () => {
                       <div className="border-t border-dashed border-gray-100 my-2"></div>
                       <button
                         onClick={() => toggleExpand(service.id)}
-                        className="text-[#ea580c] hover:text-[#f05a11] cursor-pointer text-sm font-semibold mb-6 text-left w-full transition-colors duration-200"
+                        className="text-[#b89047] hover:text-[#f05a11] cursor-pointer text-sm font-semibold mb-6 text-left w-full transition-colors duration-200"
                       >
                         {expandedServices[service.id]
                           ? "read less"
@@ -723,7 +723,7 @@ const Section3 = () => {
                               key={idx}
                               className="flex items-start gap-2.5 text-xs font-semibold text-slate-700 leading-snug"
                             >
-                              <FaCheckCircle className="text-[#f97316] text-[14px] mt-0.5 shrink-0" />
+                              <FaCheckCircle className="text-[#b89047] text-[14px] mt-0.5 shrink-0" />
                               <span>{feature}</span>
                             </li>
                           ))}

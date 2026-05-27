@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const checklistItems = [
   "Advanced Curriculum",
@@ -12,7 +13,7 @@ const checklistItems = [
 
 const Accadmy4 = () => {
   return (
-    <section className="w-full bg-white py-16 md:py-24">
+    <section className="w-full bg-white py-16 md:py-24 font-sans">
       <div className="max-w-[1200px] mx-auto px-6 flex flex-wrap items-center gap-12 lg:gap-16">
 
         {/* ─── Left Column: Text Content ─── */}
@@ -88,7 +89,7 @@ const Accadmy4 = () => {
           </ul>
 
           {/* CTA Button */}
-          <button
+          <Link href="/About"
             className="px-8 py-3.5 tracking-[2px] uppercase font-semibold text-xs transition-all duration-300 cursor-pointer"
             style={{
               color: "#b89047",
@@ -107,7 +108,7 @@ const Accadmy4 = () => {
             }}
           >
             Know More About Us
-          </button>
+          </Link>
         </div>
 
         {/* ─── Right Column: Image Collage ─── */}

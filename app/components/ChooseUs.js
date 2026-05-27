@@ -46,7 +46,7 @@ const ChooseUs = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-4 mb-12">
             {features.map((feature, index) => (
               <div key={index} className="flex items-center gap-3">
-                <div className="shrink-0 w-5 h-5 rounded-full bg-[#f26d21] text-white flex items-center justify-center shadow-sm shadow-orange-500/30">
+                <div className="shrink-0 w-5 h-5 rounded-full bg-[#b89047] text-white flex items-center justify-center shadow-sm shadow-[#b89047]/30">
                   <Check className="w-3.5 h-3.5 stroke-3" />
                 </div>
                 <span className="text-[#0A2647] font-bold text-[15px]">
@@ -57,7 +57,7 @@ const ChooseUs = () => {
           </div>
 
           <div className="flex flex-wrap items-center gap-8 md:gap-12">
-            <button 
+            <button
               onClick={() => setIsPopupOpen(true)}
               className="bg-[#0A2647] hover:bg-[#0A2647]/90 text-white pl-7 pr-2.5 py-2.5 rounded-xl flex items-center gap-4 font-semibold text-[17px] transition-all hover:scale-105 shadow-xl shadow-blue-900/10"
             >
@@ -68,7 +68,7 @@ const ChooseUs = () => {
             </button>
 
             <div className="flex items-center gap-4">
-              <div className="text-[#f26d21]">
+              <div className="text-[#b89047]">
                 <PhoneCall className="w-10 h-10 stroke-[1.5]" />
               </div>
               <div className="flex flex-col">
@@ -76,7 +76,7 @@ const ChooseUs = () => {
                   Contact us?
                 </span>
                 <span className="text-[#0A2647] font-extrabold text-[22px] tracking-tight">
-                  +1 123 456 7890
+                  +91 9971853904
                 </span>
               </div>
             </div>
@@ -120,7 +120,7 @@ const ChooseUs = () => {
 
           {/* Video Call Support Badge */}
           <div className="absolute top-[35%] -left-2 sm:-left-6 lg:-left-12 z-20 bg-white rounded-[1.25rem] shadow-xl p-2.5 sm:p-4 flex items-center gap-2 sm:gap-4">
-            <div className="text-[#f26d21] border-[1.5px] border-[#f26d21] rounded-xl p-2">
+            <div className="text-[#b89047] border-[1.5px] border-[#b89047] rounded-xl p-2">
               <Video className="w-6 h-6 stroke-2" />
             </div>
             <p className="text-[#0A2647] font-bold text-[13px] sm:text-[15px] leading-[1.2]">

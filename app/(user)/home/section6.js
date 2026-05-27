@@ -82,7 +82,7 @@ const CompareSlider = ({ beforeImage, afterImage }) => {
 
 const Section6 = () => {
   return (
-    <section className="relative w-full pt-16 md:pt-24 pb-16 md:pb-24">
+    <section className="relative w-full pt-6 md:pt-10 pb-8 md:pb-12">
       {/* Background Split */}
       <div className="absolute inset-0 z-0 flex flex-col">
         <div className="h-[65%] w-full bg-[#FAF5EE]"></div>
@@ -91,7 +91,7 @@ const Section6 = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 max-w-[1000px]">
-        <h2 className="text-3xl md:text-[42px] font-bold text-center text-[#0F3057] mb-12 md:mb-16">
+        <h2 className="text-3xl md:text-[50px] font-bold text-center text-[#0F3057] mb-6 md:mb-8">
           After Treatment
         </h2>
 

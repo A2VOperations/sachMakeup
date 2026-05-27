@@ -1,9 +1,15 @@
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Check } from "lucide-react";
+import Popup from "./Popup";
 
 export default function AboutMe() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
-    <section className="relative bg-[#fcf9f4] py-20 px-4 overflow-hidden">
+    <>
+      <section className="relative bg-[#fcf9f4] py-20 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         {/* Left Side: Image and Floating Badges */}
         <div className="relative w-full lg:w-1/2 flex justify-center mt-10 lg:mt-0">
@@ -15,7 +21,7 @@ export default function AboutMe() {
               style={{ animationDuration: "30s" }}
             >
               <div className="absolute inset-0 rotate-210">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#ea580c] rounded-full shadow-[0_0_12px_rgba(234,88,12,0.8)]"></div>
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#b89047] rounded-full shadow-[0_0_12px_rgba(234,88,12,0.8)]"></div>
               </div>
             </div>
             {/* Circle 2 */}
@@ -27,7 +33,7 @@ export default function AboutMe() {
               }}
             >
               <div className="absolute inset-0 rotate-300">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#f97316] rounded-full"></div>
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#b89047] rounded-full"></div>
               </div>
             </div>
             {/* Circle 3 */}
@@ -36,7 +42,7 @@ export default function AboutMe() {
               style={{ animationDuration: "60s" }}
             >
               <div className="absolute inset-0 rotate-45">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#f97316] rounded-full"></div>
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#b89047] rounded-full"></div>
               </div>
             </div>
             {/* Circle 4 */}
@@ -80,7 +86,7 @@ export default function AboutMe() {
             />
             {/* 20+ Years Experienced Badge */}
             <div className="absolute top-[40%] -left-2 sm:-left-6 md:-left-12 -translate-y-1/2 bg-white rounded-2xl shadow-xl p-3 sm:p-5 flex items-center gap-2 sm:gap-4 z-20 hover:scale-105 transition-transform duration-300">
-              <span className="text-[2.5rem] sm:text-[2.5rem] font-extrabold text-[#f97316] leading-none">
+              <span className="text-[2.5rem] sm:text-[2.5rem] font-extrabold text-[#b89047] leading-none">
                 20+
               </span>
               <div className="flex flex-col text-xs sm:text-sm font-bold text-[#1e293b] leading-tight">
@@ -132,7 +138,7 @@ export default function AboutMe() {
                 <span className="text-[11px] text-slate-500 mt-0.5 leading-snug w-[110px]">
                   Quality and Accreditation Institute
                 </span>
-                <span className="text-[12px] font-bold text-[#f97316] mt-1">
+                <span className="text-[12px] font-bold text-[#b89047] mt-1">
                   Best Dermatologists
                 </span>
               </div>
@@ -143,7 +149,7 @@ export default function AboutMe() {
         {/* Right Side: Content */}
         <div className="w-full lg:w-1/2 flex flex-col gap-5 relative z-20">
           <div>
-            <span className="inline-block px-4 py-1.5 rounded-full bg-orange-100 text-[#ea580c] text-[13px] font-bold tracking-wide">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-orange-100 text-[#b89047] text-[13px] font-bold tracking-wide">
               Best Dentist
             </span>
           </div>
@@ -161,7 +167,7 @@ export default function AboutMe() {
           </p>
 
           <div className="mt-2">
-            <h3 className="text-lg font-bold text-[#ea580c] mb-3">
+            <h3 className="text-lg font-bold text-[#b89047] mb-3">
               About Skills
             </h3>
             {/* Dotted Divider */}
@@ -203,9 +209,12 @@ export default function AboutMe() {
             </div>
 
             {/* Appointment Button */}
-            <button className="bg-[#f97316] hover:bg-[#ea580c] transition-colors shadow-[0_8px_20px_-6px_rgba(249,115,22,0.6)] text-white rounded-lg px-7 py-3.5 font-bold flex items-center gap-3 group">
+            <button
+              onClick={() => setIsPopupOpen(true)}
+              className="bg-[#b89047] hover:bg-[#d19526] transition-colors shadow-[0_8px_20px_-6px_rgba(184,144,71,0.6)] text-white rounded-lg px-7 py-3.5 font-bold flex items-center gap-3 group cursor-pointer"
+            >
               Appointment
-              <span className="bg-white text-[#f97316] w-6 h-6 rounded-full flex items-center justify-center group-hover:translate-x-1 transition-transform">
+              <span className="bg-white text-[#b89047] w-6 h-6 rounded-full flex items-center justify-center group-hover:translate-x-1 transition-transform">
                 <svg
                   width="12"
                   height="12"
@@ -223,14 +232,16 @@ export default function AboutMe() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+      <Popup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
+    </>
   );
 }
 
 function SkillItem({ text }) {
   return (
     <div className="flex items-center gap-2.5">
-      <Check strokeWidth={3} className="text-[#f97316] w-4 h-4" />
+      <Check strokeWidth={3} className="text-[#b89047] w-4 h-4" />
       <span>{text}</span>
     </div>
   );

@@ -8,7 +8,6 @@ import FAQ from "../components/FAQ";
 import Section7 from "./home/section7";
 import ChooseUs from "../components/ChooseUs";
 import AboutMe from "../components/aboutMe";
-import Gallery from "../components/Gallery";
 import Testimonial from "../components/Testomonial";
 
 export default function Home() {
@@ -21,7 +20,6 @@ export default function Home() {
       <Section4 />
       <Section5 />
       <Section6 />
-      <Gallery />
       <AboutMe />
       <ChooseUs />
       <FAQ />

@@ -5,7 +5,6 @@ import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 import { useState } from "react";
 import { sendContactEmail } from "../../actions";
 
-
 const ContactPage = () => {
   const [status, setStatus] = useState(null);
   const [isPending, setIsPending] = useState(false);
@@ -67,7 +66,7 @@ const ContactPage = () => {
                     id="firstName"
                     name="firstName" // <-- Added name attribute
                     required
-                    className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#f26d21]/50 focus:border-[#f26d21] transition-all"
+                    className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#b89047]/50 focus:border-[#b89047] transition-all"
                     placeholder="John"
                   />
                 </div>
@@ -83,7 +82,7 @@ const ContactPage = () => {
                     id="lastName"
                     name="lastName" // <-- Added name attribute
                     required
-                    className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#f26d21]/50 focus:border-[#f26d21] transition-all"
+                    className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#b89047]/50 focus:border-[#b89047] transition-all"
                     placeholder="Doe"
                   />
                 </div>
@@ -101,7 +100,7 @@ const ContactPage = () => {
                   id="email"
                   name="email" // <-- Added name attribute
                   required
-                  className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#f26d21]/50 focus:border-[#f26d21] transition-all"
+                  className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#b89047]/50 focus:border-[#b89047] transition-all"
                   placeholder="john@example.com"
                 />
               </div>
@@ -117,7 +116,7 @@ const ContactPage = () => {
                   type="tel"
                   id="phone"
                   name="phone" // <-- Added name attribute
-                  className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#f26d21]/50 focus:border-[#f26d21] transition-all"
+                  className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#b89047]/50 focus:border-[#b89047] transition-all"
                   placeholder="+1 (555) 000-0000"
                 />
               </div>
@@ -134,7 +133,7 @@ const ContactPage = () => {
                   name="message" // <-- Added name attribute
                   required
                   rows="5"
-                  className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#f26d21]/50 focus:border-[#f26d21] transition-all resize-none"
+                  className="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#b89047]/50 focus:border-[#b89047] transition-all resize-none"
                   placeholder="How can we help you?"
                 ></textarea>
               </div>
@@ -142,7 +141,7 @@ const ContactPage = () => {
               <button
                 type="submit" // <-- Changed from "button" to "submit"
                 disabled={isPending}
-                className="w-full bg-[#f26d21] hover:bg-[#e05e10] text-white py-4 rounded-xl font-bold text-[17px] flex items-center justify-center gap-2 transition-all hover:scale-[1.02] shadow-xl shadow-orange-500/20 disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full bg-[#b89047] hover:bg-[#e05e10] text-white py-4 rounded-xl font-bold text-[17px] flex items-center justify-center gap-2 transition-all hover:scale-[1.02] shadow-xl shadow-[#b89047]/20 disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {isPending ? "Sending..." : "Send Message"}
                 <Send className="w-5 h-5" />
@@ -178,9 +177,11 @@ const ContactPage = () => {
                 <div>
                   <h4 className="text-xl font-bold mb-2">Our Location</h4>
                   <p className="text-gray-500 leading-relaxed">
-                    123 Beauty Avenue, Makeup District
+                    Main, 25 Feet Rd, near gopeshwarnath mandir, opp. vishal
                     <br />
-                    New York, NY 10001
+                    mega mart, Bhagat Colony, Sant Nagar, Burari,
+                    <br />
+                    New Delhi, Delhi - 110084
                   </p>
                 </div>
               </div>
@@ -193,9 +194,7 @@ const ContactPage = () => {
                 <div>
                   <h4 className="text-xl font-bold mb-2">Phone Number</h4>
                   <p className="text-gray-500 leading-relaxed">
-                    +1 123 456 7890
-                    <br />
-                    +1 098 765 4321
+                    +91 9971853904
                   </p>
                 </div>
               </div>
@@ -237,19 +236,19 @@ const ContactPage = () => {
               <div className="flex gap-4">
                 <a
                   href="#"
-                  className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#0A2647] hover:bg-[#f26d21] hover:text-white hover:border-[#f26d21] transition-all shadow-sm"
+                  className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#0A2647] hover:bg-[#b89047] hover:text-white hover:border-[#b89047] transition-all shadow-sm"
                 >
                   <FaInstagram className="w-5 h-5" />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#0A2647] hover:bg-[#f26d21] hover:text-white hover:border-[#f26d21] transition-all shadow-sm"
+                  className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#0A2647] hover:bg-[#b89047] hover:text-white hover:border-[#b89047] transition-all shadow-sm"
                 >
                   <FaFacebook className="w-5 h-5" />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#0A2647] hover:bg-[#f26d21] hover:text-white hover:border-[#f26d21] transition-all shadow-sm"
+                  className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#0A2647] hover:bg-[#b89047] hover:text-white hover:border-[#b89047] transition-all shadow-sm"
                 >
                   <FaTwitter className="w-5 h-5" />
                 </a>
@@ -262,7 +261,7 @@ const ContactPage = () => {
       {/* Optional Map Section */}
       <div className="w-full h-[400px] bg-gray-200 mt-10">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528001097!2d-74.14482939665809!3d40.697631233306236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11766.455031578736!2d77.19525652511733!3d28.74380307391163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01d81b72b221%3A0x8b448ba1e6447b70!2sSach%20Makeovers!5e0!3m2!1sen!2sin!4v1779859466188!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -270,7 +269,7 @@ const ContactPage = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="Google Maps"
-        ></iframe>
+        />
       </div>
     </div>
   );

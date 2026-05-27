@@ -69,7 +69,7 @@ const features = [
 
 const Accadmy3 = () => {
   return (
-    <section className="w-full bg-white py-16 md:py-20" style={{ fontFamily: "'Inter', 'Segoe UI', sans-serif" }}>
+    <section className="w-full bg-[#FFF8EE] py-16 md:py-20 font-sans">
       <div className="max-w-[1200px] mx-auto px-6 flex flex-wrap items-stretch gap-12">
 
         {/* Left Column */}
@@ -103,11 +103,11 @@ const Accadmy3 = () => {
                 key={index}
                 className="rounded-xl p-4 md:p-5 transition-all duration-300 cursor-default hover:-translate-y-0.5"
                 style={{
-                  background: "#f8f8f8",
+                  background: "#ffffff",
                   border: "1px solid #e8e0d0",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "#f0ebe0";
+                  e.currentTarget.style.background = "#ffffff";
                   e.currentTarget.style.borderColor = "#b89047";
                   e.currentTarget.style.boxShadow = "0 4px 16px rgba(184,144,71,0.12)";
                 }}

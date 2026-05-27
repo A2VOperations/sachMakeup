@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Banner = () => {
   return (
@@ -23,9 +24,9 @@ const Banner = () => {
           Become a Certified Makeup & Hairstyling Expert <br className="hidden md:block" /> with our Industry-Centric Courses
         </h1>
         
-        <button className="mt-8 px-8 py-3 border border-white text-white text-[11px] sm:text-xs font-semibold tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-colors duration-300">
+        <Link href="/Contact" className="mt-8 px-8 py-3 border border-white text-white text-[11px] sm:text-xs font-semibold tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-colors duration-300">
           ENROLL NOW
-        </button>
+        </Link>
       </div>
     </section>
   );

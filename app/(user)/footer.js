@@ -45,13 +45,13 @@ const Footer = () => {
                   fillRule="evenodd"
                   clipRule="evenodd"
                   d="M37.55 16.42C38.43 17.36 38.43 18.9 37.55 19.84L33.26 24.46C32.38 25.41 30.97 25.41 30.08 24.46L17.11 10.49C16.23 9.55 16.23 8.01 17.11 7.07L21.4 2.45C22.28 1.5 23.69 1.5 24.58 2.45L37.55 16.42Z"
-                  fill="#f97316"
+                  fill="#b89047"
                 />
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
                   d="M16 38.45C16.89 39.4 18.3 39.4 19.18 38.45L23.47 33.83C24.35 32.89 24.35 31.35 23.47 30.41L10.5 16.44C9.61 15.49 8.2 15.49 7.32 16.44L3.03 21.06C2.15 22 2.15 23.54 3.03 24.48L16 38.45Z"
-                  fill="#f97316"
+                  fill="#b89047"
                 />
                 <path
                   fillRule="evenodd"
@@ -65,7 +65,7 @@ const Footer = () => {
               <h2 className="text-[28px] font-extrabold tracking-tight text-white leading-none mb-0">
                 Clinic
               </h2>
-              <h2 className="text-[17px] font-bold tracking-widest text-[#f97316] leading-none mt-1">
+              <h2 className="text-[17px] font-bold tracking-widest text-[#b89047] leading-none mt-1">
                 Master
               </h2>
             </div>
@@ -101,9 +101,9 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your Email Address"
-                className="w-full bg-[#0b101a] text-[13px] text-white px-5 py-3.5 rounded-xl focus:outline-none focus:ring-1 focus:ring-orange-500 border border-transparent"
+                className="w-full bg-[#0b101a] text-[13px] text-white px-5 py-3.5 rounded-xl focus:outline-none focus:ring-1 focus:ring-[#b89047] border border-transparent"
               />
-              <button className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-orange-500 transition-colors">
+              <button className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#b89047] transition-colors">
                 <FaPaperPlane className="text-sm" />
               </button>
             </div>
@@ -150,19 +150,19 @@ const Footer = () => {
             <ul className="space-y-4 text-[13px] font-medium text-gray-300">
               <li className="flex gap-2.5 items-start">
                 <FaMapMarkerAlt
-                  className="text-[#f97316] shrink-0 mt-1"
+                  className="text-[#b89047] shrink-0 mt-1"
                   size={14}
                 />
                 <span className="leading-relaxed">
-                  123 Beauty Avenue,
-                  <br />
-                  Makeup District,
-                  <br />
-                  New York, NY 10001
+                  Main, 25 Feet Rd, near gopeshwarnath mandir, opp. vishal
+
+                  mega mart, Bhagat Colony, Sant Nagar, Burari,
+   
+                  New Delhi, Delhi - 110084
                 </span>
               </li>
               <li className="pt-3 border-t border-gray-800/80">
-                <span className="text-[#f97316] block mb-2 font-bold text-[12px] tracking-wider uppercase">
+                <span className="text-[#b89047] block mb-2 font-bold text-[12px] tracking-wider uppercase">
                   Locations Served
                 </span>
                 <p className="text-gray-400 leading-relaxed text-[12px]">
@@ -179,7 +179,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#b89047] transition-colors"
                 >
                   Bridal Makeovers
                 </Link>
@@ -187,7 +187,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#b89047] transition-colors"
                 >
                   Party & Occasion
                 </Link>
@@ -195,7 +195,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#b89047] transition-colors"
                 >
                   Editorial & Fashion
                 </Link>
@@ -203,7 +203,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#b89047] transition-colors"
                 >
                   Hair & Styling
                 </Link>
@@ -217,7 +217,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#b89047] transition-colors"
                 >
                   Privacy Policy
                 </Link>
@@ -225,7 +225,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#b89047] transition-colors"
                 >
                   Terms & Conditions
                 </Link>
@@ -233,7 +233,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#"
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#b89047] transition-colors"
                 >
                   Contact Us
                 </Link>
@@ -247,7 +247,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/"
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#b89047] transition-colors"
                 >
                   Home
                 </Link>
@@ -255,15 +255,23 @@ const Footer = () => {
               <li>
                 <Link
                   href="/About"
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#b89047] transition-colors"
                 >
                   About Us
                 </Link>
               </li>
               <li>
                 <Link
+                  href="/Gallery"
+                  className="hover:text-[#b89047] transition-colors"
+                >
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/Academy"
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#b89047] transition-colors"
                 >
                   Academy
                 </Link>
@@ -271,7 +279,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/Contact"
-                  className="hover:text-orange-500 transition-colors"
+                  className="hover:text-[#b89047] transition-colors"
                 >
                   Contact Us
                 </Link>
@@ -291,19 +299,19 @@ const Footer = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 md:gap-10 flex-2 items-center lg:items-start w-full lg:w-auto justify-center">
             <div className="flex items-center gap-3">
-              <div className="w-[44px] h-[44px] rounded-full bg-[#f97316] flex items-center justify-center text-white text-lg shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
+              <div className="w-[44px] h-[44px] rounded-full bg-[#b89047] flex items-center justify-center text-white text-lg shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
                 <FaPhoneAlt size={16} />
               </div>
               <div className="text-left">
                 <h4 className="font-bold text-[14px] mb-0.5">Call Us</h4>
                 <p className="text-gray-400 text-[12px] tracking-wide">
-                  +1 123 456 7890
+                  +91 9971853904
                 </p>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="w-[44px] h-[44px] rounded-full bg-[#f97316] flex items-center justify-center text-white text-lg shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
+              <div className="w-[44px] h-[44px] rounded-full bg-[#b89047] flex items-center justify-center text-white text-lg shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
                 <FaEnvelope size={16} />
               </div>
               <div className="text-left">
@@ -315,7 +323,7 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center gap-3">
-              <div className="w-[44px] h-[44px] rounded-full bg-[#f97316] flex items-center justify-center text-white text-lg shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
+              <div className="w-[44px] h-[44px] rounded-full bg-[#b89047] flex items-center justify-center text-white text-lg shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
                 <FaClock size={16} />
               </div>
               <div className="text-left">
@@ -331,7 +339,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center text-[13px] text-gray-400 pt-2 border-t border-gray-800/0">
           <p>
-            © 2026 <span className="text-[#f97316]">DexignZone</span> Theme. All
+            © 2026 <span className="text-[#b89047]">DexignZone</span> Theme. All
             Rights Reserved.
           </p>
           <div className="flex gap-1.5 mt-4 md:mt-0 items-center">

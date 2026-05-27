@@ -137,7 +137,7 @@ const Section5 = () => {
                         alt={service.title}
                       />
                       <div className="absolute bottom-4 left-4 right-4 bg-white rounded-xl p-3 flex items-center justify-center gap-2 shadow-sm hover:bg-orange-50 transition-colors">
-                        <FiCalendar className="text-[#f97316] text-lg" />
+                        <FiCalendar className="text-[#b89047] text-lg" />
                         <span className="text-sm font-semibold text-[#1c325b]">
                           Reserve A Session
                         </span>
@@ -164,7 +164,7 @@ const Section5 = () => {
                               key={idx}
                               className="flex items-center gap-3 text-sm font-semibold text-[#1c325b]"
                             >
-                              <FaCheckCircle className="text-[#f97316] text-lg" />
+                              <FaCheckCircle className="text-[#b89047] text-lg" />
                               {feature}
                             </li>
                           ))}
@@ -184,12 +184,12 @@ const Section5 = () => {
                             <h4 className="text-sm font-bold text-[#1c325b]">
                               {service.doctor.name}
                             </h4>
-                            <p className="text-xs font-semibold text-[#f97316] mt-0.5">
+                            <p className="text-xs font-semibold text-[#b89047] mt-0.5">
                               {service.doctor.specialty}
                             </p>
                           </div>
                         </div>
-                        <button className="w-12 h-12 bg-[#f97316] rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors shadow-md shrink-0">
+                        <button className="w-12 h-12 bg-[#b89047] rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors shadow-md shrink-0">
                           <FiArrowUpRight size={24} />
                         </button>
                       </div>
