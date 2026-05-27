@@ -21,6 +21,7 @@ export default function Home() {
       <Section5 />
       <Section6 />
       <AboutMe />
+      <Section4 />
       <ChooseUs />
       <FAQ />
       <Testimonial />

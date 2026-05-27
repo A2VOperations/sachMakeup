@@ -12,7 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --font-aldrich: var(--font-aldrich);
   --animate-ring: ring 1.5s ease-in-out infinite;
-  --animate-marquee: marquee 25s linear infinite;
+  --animate-marquee: marquee 80s linear infinite;
 
   @keyframes ring {
     0%, 100% { transform: translateX(0); }
