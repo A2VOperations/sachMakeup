@@ -55,12 +55,12 @@ const FAQ = () => {
                 return (
                   <div key={index} className="border-b border-[#F0E6D8]/80">
                     <button
-                      className="w-full flex items-center justify-between py-5 text-left text-base md:text-lg font-semibold text-[#0F3057] hover:text-[#f97316] transition-colors duration-300 focus:outline-none group"
+                      className="w-full flex items-center justify-between py-5 text-left text-base md:text-lg font-semibold text-[#0F3057] hover:text-[#b89047] transition-colors duration-300 focus:outline-none group"
                       onClick={() => toggleAccordion(index)}
                     >
                       <span className="pr-4">{item.question}</span>
                       <FiChevronRight
-                        className={`text-[#0F3057] group-hover:text-[#f97316] text-xl transition-transform duration-300 ${
+                        className={`text-[#0F3057] group-hover:text-[#b89047] text-xl transition-transform duration-300 ${
                           isOpen ? "rotate-90" : ""
                         }`}
                       />
@@ -137,7 +137,7 @@ const FAQ = () => {
               </div>
 
               {/* Diagonal Arrow Round Button */}
-              <button className="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-[#f97316] hover:bg-[#f97316] hover:text-white transition-all duration-300 border border-[#F0E6D8]/60 cursor-pointer">
+              <button className="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-[#b89047] hover:bg-[#b89047] hover:text-white transition-all duration-300 border border-[#F0E6D8]/60 cursor-pointer">
                 <FiArrowUpRight size={22} />
               </button>
             </div>
@@ -146,7 +146,7 @@ const FAQ = () => {
             <div className="flex items-center gap-2 mt-2">
               <div className="flex items-center gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <FaStar key={i} className="text-[#f97316] text-sm" />
+                  <FaStar key={i} className="text-[#b89047] text-sm" />
                 ))}
               </div>
               <span className="text-[11px] md:text-xs font-semibold text-[#0F3057]/70">

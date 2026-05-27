@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Accadmy1() {
   return (
-    <div className="w-full flex flex-col bg-white">
+    <div className="w-full flex flex-col bg-[#FFF8EE] font-sans">
       {/* Job Assistance Section */}
       <div className="w-full relative h-[450px] md:h-[500px] flex items-center justify-center overflow-hidden">
         {/* Left Split Background Image */}
@@ -54,11 +54,11 @@ export default function Accadmy1() {
         
         {/* Title with lines */}
         <div className="flex items-center justify-center space-x-4 mb-16">
-          <div className="w-8 md:w-12 h-[1px] bg-[#b89047]/40"></div>
-          <h2 className="text-2xl md:text-4xl font-serif text-[#132c52] font-light tracking-wide text-center">
+          <div className="w-8 md:w-12 h-1px bg-[#b89047]/40"></div>
+          <h2 className="text-2xl md:text-4xl font-sans text-[#132c52] font-light tracking-wide text-center">
             What Our Students Say
           </h2>
-          <div className="w-8 md:w-12 h-[1px] bg-[#b89047]/40"></div>
+          <div className="w-8 md:w-12 h-1px bg-[#b89047]/40"></div>
         </div>
 
         {/* Carousel Grid with Arrows */}
@@ -217,7 +217,7 @@ export default function Accadmy1() {
         {/* Right side: Text Content & Button */}
         <div className="w-full md:w-[65%] lg:w-[70%] py-12 px-6 md:pl-16 md:pr-12 flex flex-col lg:flex-row lg:items-center justify-between gap-8 z-10 relative">
           {/* Subtle gold gradient glow layer */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#dfb76c]/2 to-[#dfb76c]/5 pointer-events-none z-0"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-transparent via-[#dfb76c]/2 to-[#dfb76c]/5 pointer-events-none z-0"></div>
           
           {/* Gold wave decorative curves */}
           <div className="absolute right-0 top-0 bottom-0 w-1/2 pointer-events-none opacity-5 hidden lg:block z-0">
@@ -235,7 +235,7 @@ export default function Accadmy1() {
           </div>
 
           <div className="flex flex-col text-left max-w-xl z-10">
-            <h2 className="text-2xl md:text-3xl lg:text-[34px] font-serif text-[#132c52] font-light tracking-wide mb-3 leading-snug">
+            <h2 className="text-2xl md:text-3xl lg:text-[34px] font-sans text-[#132c52] font-light tracking-wide mb-3 leading-snug">
               Start Your Journey in the <br className="hidden md:block" /> Beauty Industry Today!
             </h2>
             <p className="text-xs md:text-sm text-gray-600 font-light leading-relaxed">
@@ -246,7 +246,7 @@ export default function Accadmy1() {
           <div className="shrink-0 z-10">
             <Link
               href="/Contact"
-              className="inline-flex items-center space-x-2 bg-[#b89047] hover:bg-[#997733] text-white font-semibold uppercase py-3.5 px-8 rounded-lg text-xs tracking-[0.1em] transition-all duration-300 shadow-md hover:shadow-[#b89047]/10"
+              className="inline-flex items-center space-x-2 bg-[#b89047] hover:bg-[#997733] text-white font-semibold uppercase py-3.5 px-8 rounded-lg text-xs tracking-widest transition-all duration-300 shadow-md hover:shadow-[#b89047]/10"
             >
               <span>Enroll Now</span>
               <svg

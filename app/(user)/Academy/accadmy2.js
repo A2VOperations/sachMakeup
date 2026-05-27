@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Accadmy2() {
   return (
-    <div className="w-full bg-[#FFF8EE] py-20 px-4 md:px-12 lg:px-24 border-b border-[#dfb76c]/30 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-12">
+    <div className="w-full bg-[#FFF8EE] py-20 px-4 md:px-12 lg:px-24 border-b border-[#dfb76c]/30 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-12 font-sans">
       {/* Subtle gold gradient curves on the background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#dfb76c]/2 to-[#dfb76c]/8 pointer-events-none z-0"></div>
+      <div className="absolute inset-0 bg-linear-to-r from-transparent via-[#dfb76c]/2 to-[#dfb76c]/8 pointer-events-none z-0"></div>
       <div className="absolute -left-12 -top-12 w-64 h-64 rounded-full bg-[#dfb76c]/5 blur-3xl pointer-events-none"></div>
 
       {/* Left Side: Premium Text Content */}
@@ -13,7 +13,7 @@ export default function Accadmy2() {
         <span className="text-[#b89047] text-xs font-bold tracking-[0.25em] uppercase mb-4">
           Sach Makeover Academy
         </span>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#132c52] font-light leading-tight mb-6">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans text-[#132c52] font-light leading-tight mb-6">
           Beauty Academy <br />
           in <span className="font-semibold text-[#b89047]">Delhi</span>
         </h1>
@@ -23,7 +23,7 @@ export default function Accadmy2() {
         </p>
         
         {/* Academy details badge */}
-        <div className="flex items-center space-x-6 text-xs text-gray-500 font-medium uppercase tracking-[0.1em]">
+        <div className="flex items-center space-x-6 text-xs text-gray-500 font-medium uppercase tracking-widest">
           <div className="flex items-center space-x-2">
             <span className="w-2 h-2 rounded-full bg-[#b89047]"></span>
             <span>100% Job Assistance</span>
@@ -38,7 +38,7 @@ export default function Accadmy2() {
       {/* Right Side: Elegant Double Image Layout */}
       <div className="w-full lg:w-1/2 flex items-center justify-center relative z-10 min-h-[350px] md:min-h-[420px]">
         {/* Main Arched Frame (Bride Makeup) */}
-        <div className="absolute left-4 md:left-12 top-0 w-[220px] md:w-[280px] h-[300px] md:h-[380px] rounded-t-full overflow-hidden border-[6px] border-white shadow-[0_15px_40px_rgba(184,144,71,0.15)] z-10 transition-transform duration-500 hover:scale-[1.02]">
+        <div className="absolute left-4 md:left-12 w-[220px] md:w-[400px] h-[300px] md:h-[500px] rounded-t-full overflow-hidden border-[6px] border-white shadow-[0_15px_40px_rgba(184,144,71,0.15)] z-10 transition-transform duration-500 hover:scale-[1.02]">
           <Image
             src="/images/bridal_makeup_course.png"
             alt="Bridal Makeup Work"

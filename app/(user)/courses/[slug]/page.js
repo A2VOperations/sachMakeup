@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { coursesData } from "../data";
 import { notFound } from "next/navigation";
+import CourseEnquiryForm from "@/app/components/CourseEnquiryForm";
 
 export default async function CourseDetailPage({ params }) {
   const { slug } = await params;
@@ -24,9 +25,16 @@ export default async function CourseDetailPage({ params }) {
         />
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
-          <h1 className="text-4xl md:text-5xl font-serif text-center mb-4">{course.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-serif text-center mb-4">
+            {course.title}
+          </h1>
           <div className="flex items-center space-x-2 text-sm md:text-base tracking-widest uppercase font-medium">
-            <Link href="/Academy" className="hover:text-orange-400 transition-colors">Academy</Link>
+            <Link
+              href="/Academy"
+              className="hover:text-orange-400 transition-colors"
+            >
+              Academy
+            </Link>
             <span>-</span>
             <span className="text-orange-400">Courses</span>
           </div>
@@ -46,20 +54,30 @@ export default async function CourseDetailPage({ params }) {
                 className="object-cover"
               />
             </div>
-            
+
             <h2 className="text-3xl font-serif text-[#333]">{course.title}</h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-6 border-y border-gray-200">
               <div className="flex flex-col">
-                <span className="text-gray-500 uppercase text-xs font-semibold tracking-wider mb-1">Duration</span>
-                <span className="text-[#333] font-medium">{course.duration}</span>
+                <span className="text-gray-500 uppercase text-xs font-semibold tracking-wider mb-1">
+                  Duration
+                </span>
+                <span className="text-[#333] font-medium">
+                  {course.duration}
+                </span>
               </div>
               <div className="flex flex-col">
-                <span className="text-gray-500 uppercase text-xs font-semibold tracking-wider mb-1">Timings</span>
-                <span className="text-[#333] font-medium">{course.timings}</span>
+                <span className="text-gray-500 uppercase text-xs font-semibold tracking-wider mb-1">
+                  Timings
+                </span>
+                <span className="text-[#333] font-medium">
+                  {course.timings}
+                </span>
               </div>
               <div className="flex flex-col">
-                <span className="text-gray-500 uppercase text-xs font-semibold tracking-wider mb-1">Batch</span>
+                <span className="text-gray-500 uppercase text-xs font-semibold tracking-wider mb-1">
+                  Batch
+                </span>
                 <span className="text-[#333] font-medium">{course.batch}</span>
               </div>
             </div>
@@ -70,7 +88,9 @@ export default async function CourseDetailPage({ params }) {
                 {course.syllabus.map((item, idx) => (
                   <li key={idx} className="flex items-start space-x-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-2 flex-shrink-0"></span>
-                    <span className="text-gray-700 leading-relaxed text-sm md:text-base">{item}</span>
+                    <span className="text-gray-700 leading-relaxed text-sm md:text-base">
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -80,56 +100,10 @@ export default async function CourseDetailPage({ params }) {
 
         {/* Right Sidebar - Enquiry Form */}
         <div className="w-full lg:w-1/3 lg:sticky lg:top-24">
-          <div className="bg-white p-8 rounded-xl shadow-xl shadow-orange-900/5 border border-gray-100 flex flex-col">
-            <div className="flex items-center space-x-3 mb-8">
-              <span className="w-1 h-6 bg-orange-500 rounded-full"></span>
-              <h3 className="text-2xl font-serif text-[#333]">ENQUIRY NOW</h3>
-            </div>
-            
-            <form className="flex flex-col space-y-5">
-              <div className="flex flex-col space-y-1.5">
-                <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Name</label>
-                <input 
-                  type="text" 
-                  placeholder="Your full name"
-                  className="w-full bg-[#f8f5f0] border-0 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-orange-300 outline-none transition-all placeholder:text-gray-400 text-gray-800"
-                />
-              </div>
-              <div className="flex flex-col space-y-1.5">
-                <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Email</label>
-                <input 
-                  type="email" 
-                  placeholder="Your email address"
-                  className="w-full bg-[#f8f5f0] border-0 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-orange-300 outline-none transition-all placeholder:text-gray-400 text-gray-800"
-                />
-              </div>
-              <div className="flex flex-col space-y-1.5">
-                <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Phone No.</label>
-                <input 
-                  type="tel" 
-                  placeholder="Your phone number"
-                  className="w-full bg-[#f8f5f0] border-0 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-orange-300 outline-none transition-all placeholder:text-gray-400 text-gray-800"
-                />
-              </div>
-              <div className="flex flex-col space-y-1.5">
-                <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Message</label>
-                <textarea 
-                  rows={4}
-                  placeholder="Your message..."
-                  className="w-full bg-[#f8f5f0] border-0 rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-orange-300 outline-none transition-all placeholder:text-gray-400 text-gray-800 resize-none"
-                ></textarea>
-              </div>
-              
-              <button 
-                type="submit"
-                className="w-full bg-[#9b2c2c] hover:bg-red-900 text-white font-medium text-sm tracking-widest uppercase py-4 rounded-lg mt-4 transition-colors shadow-lg shadow-red-900/20"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
+          <CourseEnquiryForm courseTitle={course.title} />
         </div>
       </div>
     </div>
   );
 }
+
