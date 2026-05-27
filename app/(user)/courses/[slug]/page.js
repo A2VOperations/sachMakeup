@@ -87,7 +87,7 @@ export default async function CourseDetailPage({ params }) {
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
                 {course.syllabus.map((item, idx) => (
                   <li key={idx} className="flex items-start space-x-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-2 flex-shrink-0"></span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-2 shrink-0"></span>
                     <span className="text-gray-700 leading-relaxed text-sm md:text-base">
                       {item}
                     </span>
@@ -107,3 +107,10 @@ export default async function CourseDetailPage({ params }) {
   );
 }
 
+export async function generateStaticParams() {
+  return coursesData.map((course) => ({
+    slug: course.slug,
+  }));
+}
+
+export const dynamicParams = false;
