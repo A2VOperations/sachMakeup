@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const Section2 = () => {
   return (
-    <section className="bg-[#FFF8EE] font-sans text-[#0A2647] w-full py-20 px-4 md:px-10 lg:px-20 overflow-hidden">
+    <section className="bg-[#FFF8EE] font-sans text-[#0A2647] w-full py-10 px-4 md:px-10 lg:px-20 overflow-hidden">
       <div className="max-w-[1500px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
         {/* Left Column: Main Image */}
         <div className="relative w-full max-w-md mx-auto lg:ml-0 xl:ml-10 mt-10 lg:mt-0">
           {/* Background Decorative Line */}
-          <div className="absolute -top-6 -left-6 md:-left-8 -bottom-10 w-[50%] border-l-[1.5px] border-b-[1.5px] border-[#0A2647] rounded-bl-[40px] pointer-events-none">
+          <div className="absolute hidden md:block -top-6 -left-6 md:-left-8 -bottom-10 w-[50%] border-l-[1.5px] border-b-[1.5px] border-[#0A2647] rounded-bl-[40px] pointer-events-none">
             {/* Star Icon */}
             <div className="absolute left-[-14px] bottom-10 bg-[#FFF8EE] py-2">
               <svg
@@ -35,7 +35,7 @@ const Section2 = () => {
           </div>
 
           {/* Circular Badge */}
-          <div className="absolute -bottom-20 -left-4 sm:left-12 md:left-24 z-20 w-36 h-36 md:w-40 md:h-40 bg-white rounded-full flex items-center justify-center shadow-lg">
+          <div className="absolute bottom-2 -left-4 sm:left-12 md:left-24 z-20 w-36 h-36 md:w-40 md:h-40 bg-white rounded-full flex items-center justify-center shadow-lg">
             {/* Circular Text SVG */}
             <div className="absolute left inset-0 animate-spin-slow p-2">
               <svg
@@ -46,7 +46,7 @@ const Section2 = () => {
                   id="circlePath"
                   d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                   fill="transparent"
-                  />
+                />
                 <text
                   className="text-[11px] font-bold tracking-[0.22em] uppercase"
                   fill="currentColor"
@@ -80,12 +80,13 @@ const Section2 = () => {
           </h2>
 
           <p className="text-base md:text-[17px] text-gray-500 leading-relaxed max-w-2xl font-light">
-            We believe your face is a unique canvas meant to be celebrated. We 
-            combine premium, luxury cosmetics with innovative application techniques to 
-            accentuate your natural features. Our team of certified makeup artists and 
-            bridal stylists create personalized looks tailored to your personality—whether 
-            it&apos;s a timeless bridal glow, a high-fashion editorial look, or effortless 
-            evening glam. Explore our studio services and discover the confidence that 
+            We believe your face is a unique canvas meant to be celebrated. We
+            combine premium, luxury cosmetics with innovative application
+            techniques to accentuate your natural features. Our team of
+            certified makeup artists and bridal stylists create personalized
+            looks tailored to your personality—whether it&apos;s a timeless
+            bridal glow, a high-fashion editorial look, or effortless evening
+            glam. Explore our studio services and discover the confidence that
             comes with a flawless, professional makeover.
           </p>
 

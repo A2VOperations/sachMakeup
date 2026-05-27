@@ -18,16 +18,16 @@ const ChooseUs = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const features = [
-    "Comprehensive Specialties",
-    "Research and Development",
-    "Emergency Services",
-    "Advanced Imaging Services",
-    "Intensive Care Units (ICUs)",
-    "Rehabilitation Services",
-    "Telemedicine Facilities",
-    "Patient-Centric Approach",
-    "Multidisciplinary Team",
-    "Health Information Technology",
+    "HD & Airbrush Bridal Experts",
+    "Premium Brands (MAC, Huda, Kryolan)",
+    "Flawless Saree Draping & Dupatta Setting",
+    "Customized Pre-Bridal Glow Packages",
+    "Advanced De-Tan & Skin Brightening",
+    "Traditional Mehendi & Haldi Prep Styles",
+    "Expert Hair Botox & Keratin Treatments",
+    "Pain-free Organic Threading & Waxing",
+    "On-Location Destination Wedding Teams",
+    "Flawless 12+ Hour Makeup Staying Power",
   ];
 
   return (
@@ -36,11 +36,10 @@ const ChooseUs = () => {
         {/* Left Content */}
         <div>
           <h2 className="text-4xl md:text-5xl lg:text-[54px] font-extrabold leading-[1.2] text-[#0A2647] mb-6">
-            Why Choose Us
+            Why Choose Our Studio
           </h2>
           <p className="text-gray-500 text-lg mb-10 max-w-xl leading-relaxed">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+            Get the perfect traditional look with a modern touch. From intricate bridal transformations to your monthly grooming essentials, our senior artists ensure you shine on every occasion.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-4 mb-12">
@@ -61,7 +60,7 @@ const ChooseUs = () => {
               onClick={() => setIsPopupOpen(true)}
               className="bg-[#0A2647] hover:bg-[#0A2647]/90 text-white pl-7 pr-2.5 py-2.5 rounded-xl flex items-center gap-4 font-semibold text-[17px] transition-all hover:scale-105 shadow-xl shadow-blue-900/10"
             >
-              Appointment
+              Book Appointment
               <div className="bg-white text-[#0A2647] p-2 rounded-lg">
                 <ArrowRight className="w-5 h-5" />
               </div>
@@ -73,7 +72,7 @@ const ChooseUs = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-gray-500 text-sm font-medium mb-0.5">
-                  Contact us?
+                  Call Desk?
                 </span>
                 <span className="text-[#0A2647] font-extrabold text-[22px] tracking-tight">
                   +91 9971853904
@@ -85,12 +84,12 @@ const ChooseUs = () => {
 
         {/* Right Content - Images */}
         <div className="relative w-full aspect-4/5 md:aspect-square lg:h-[650px] flex mt-10 lg:mt-0">
-          {/* Doctor Image Container */}
+          {/* Main Image Container */}
           <div className="absolute left-0 lg:left-4 top-0 w-[65%] sm:w-[60%] h-[75%] rounded-[2.5rem] overflow-hidden shadow-2xl z-0">
             <Image
               src="/photos/img (7).webp"
               className="w-full h-full object-cover"
-              alt="Doctor Video Call"
+              alt="Live Bridal Consultation"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
             />
@@ -107,12 +106,12 @@ const ChooseUs = () => {
             </div>
           </div>
 
-          {/* Patient Image Container */}
+          {/* Patient/Client Image Container */}
           <div className="absolute right-0 lg:-right-4 bottom-0 w-[55%] h-[75%] rounded-[2.5rem] overflow-hidden shadow-2xl z-10 border-[6px] border-[#FDFBF9]">
             <Image
               src="/photos/img (8).webp"
               className="w-full h-full object-cover"
-              alt="Treatment"
+              alt="Luxury Parlor Experience"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
             />
@@ -124,9 +123,9 @@ const ChooseUs = () => {
               <Video className="w-6 h-6 stroke-2" />
             </div>
             <p className="text-[#0A2647] font-bold text-[13px] sm:text-[15px] leading-[1.2]">
-              Video Call
+              Online Bridal
               <br />
-              Support
+              Preview
             </p>
           </div>
 
@@ -172,7 +171,7 @@ const ChooseUs = () => {
                 </span>
               </div>
               <p className="text-[#0A2647] text-[13px] font-bold opacity-80">
-                12k+ ratings on google
+                12k+ reviews on google
               </p>
             </div>
           </div>

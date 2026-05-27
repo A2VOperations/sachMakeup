@@ -85,7 +85,7 @@ export default function AboutMe() {
               className="object-cover object-top mix-blend-multiply drop-shadow-lg filter contrast-125"
             />
             {/* 20+ Years Experienced Badge */}
-            <div className="absolute top-[40%] -left-2 sm:-left-6 md:-left-12 -translate-y-1/2 bg-white rounded-2xl shadow-xl p-3 sm:p-5 flex items-center gap-2 sm:gap-4 z-20 hover:scale-105 transition-transform duration-300">
+            <div className="absolute top-[10%] -left-2 sm:-left-6 md:-left-12 -translate-y-1/2 bg-white rounded-2xl shadow-xl p-3 sm:p-5 flex items-center gap-2 sm:gap-4 z-20 hover:scale-105 transition-transform duration-300">
               <span className="text-[2.5rem] sm:text-[2.5rem] font-extrabold text-[#b89047] leading-none">
                 20+
               </span>
@@ -96,7 +96,7 @@ export default function AboutMe() {
             </div>
 
             {/* ClinicMaster Badge */}
-            <div className="absolute bottom-10 -right-2 sm:-right-4 md:-right-8 bg-white rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] p-3 sm:p-5 flex items-center gap-2 sm:gap-4 z-20 hover:scale-105 transition-transform duration-300">
+            <div className="absolute bottom-5 -right-2 sm:-right-4 md:-right-8 bg-white rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] p-3 sm:p-5 flex items-center gap-2 sm:gap-4 z-20 hover:scale-105 transition-transform duration-300">
               {/* Hexagon WHO Logo Placeholder */}
               <div className="w-16 h-16 shrink-0 relative flex items-center justify-center">
                 <svg

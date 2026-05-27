@@ -13,31 +13,31 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a making it look like readable English.",
-    author: "Kenneth Fong",
-    role: "Postgraduate Student",
+      "I booked them for my wedding and reception makeup, and it was the best decision! The HD makeup looked flawless even after 12 hours of functions, and my lehenga draping didn't budge. They made me feel like an absolute queen on my big day.",
+    author: "Priya Sharma",
+    role: "Recent Bride",
     image: "/photos/img (30).webp",
-    ratingText: "Best Treatment",
+    ratingText: "Flawless Bridal Makeup",
     rating: 5,
   },
   {
     id: 2,
     quote:
-      "The service here is absolutely phenomenal! I've never felt more rejuvenated and relaxed. Highly recommend their signature facials for anyone looking to truly treat themselves.",
-    author: "Sarah Jenkins",
-    role: "Marketing Manager",
+      "Been coming here for my pre-bridal sittings and regular grooming for the last 3 months. The O3+ facials and keratin hair spa services are just amazing. The staff is incredibly polite and maintains superb hygiene. Highly recommended!",
+    author: "Ananya Desai",
+    role: "Regular Client",
     image: "/photos/img (31).webp",
-    ratingText: "Highly Recommended",
+    ratingText: "Best Pre-Bridal Services",
     rating: 5,
   },
   {
     id: 3,
     quote:
-      "A truly magical experience from start to finish. The attention to detail, the calming atmosphere, and the professional care made my weekend visit absolutely perfect.",
-    author: "Emily Davis",
-    role: "Freelance Designer",
+      "Got my party makeup and hairstyle done here for my sister's Sangeet ceremony. They gave me a beautiful soft glam look that perfectly matched my outfit without looking cakey. I received so many compliments throughout the night!",
+    author: "Sneha Kapoor",
+    role: "Bridesmaid",
     image: "/photos/img (32).webp",
-    ratingText: "Perfect Experience",
+    ratingText: "Stunning Party Glam",
     rating: 5,
   },
 ];
@@ -91,8 +91,8 @@ export default function Testimonial() {
       </style>
 
       {/* Arch Gallery */}
-      <div className="w-full relative overflow-hidden pb-16">
-        <div className="flex justify-center items-center gap-1 sm:gap-2 md:gap-4 w-max mx-auto px-4 -mt-10 sm:mt-0">
+      <div className="w-full relative overflow-hidden pb-16 flex justify-center">
+        <div className="flex justify-center items-center gap-1 sm:gap-2 md:gap-4 w-max min-w-max shrink-0 px-4 pt-15 -mt-10 sm:mt-0">
           {archImages.map((src, i) => {
             const x = i - (archImages.length - 1) / 2;
             const rot = x * 4;
@@ -105,7 +105,7 @@ export default function Testimonial() {
               >
                 <Image
                   src={src}
-                  alt={`Patient ${i + 1}`}
+                  alt={`Happy Client ${i + 1}`}
                   fill
                   className="object-cover"
                 />
@@ -119,11 +119,10 @@ export default function Testimonial() {
       <div className="max-w-6xl mx-auto px-4 md:px-8 mt-12 relative">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-[#1B2559] mb-4">
-            What Our Patient Say
+            What Our Gorgeous Clients Say
           </h2>
           <p className="text-gray-500 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+            From intimate Haldi ceremonies to grand wedding receptions, hear from the beautiful women who trusted our studio with their biggest moments.
           </p>
         </div>
 
@@ -167,7 +166,7 @@ export default function Testimonial() {
                   </svg>
 
                   <p className="text-lg md:text-xl font-medium leading-relaxed text-[#1B2559] mb-8 min-h-[120px]">
-                    {testimonial.quote}
+                    &quot;{testimonial.quote}&quot;
                   </p>
 
                   <div>
@@ -184,7 +183,7 @@ export default function Testimonial() {
                   <div className="relative w-full max-w-[400px] mx-auto md:mr-auto lg:mr-0 aspect-4/5 rounded-4xl overflow-hidden bg-[#E2D4C8]">
                     <Image
                       src={testimonial.image}
-                      alt="Patient testimonial"
+                      alt={`${testimonial.author} Testimonial`}
                       fill
                       className="object-cover object-center"
                     />

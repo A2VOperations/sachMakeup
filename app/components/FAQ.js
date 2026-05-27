@@ -6,24 +6,24 @@ import { FaStar } from "react-icons/fa";
 
 const faqData = [
   {
-    question: "How much do you charge for pedicure ?",
+    question: "Do your bridal packages include saree draping and hairstyling?",
     answer:
-      "Our pedicure treatments range from $45 to $85 depending on the specific package and add-ons selected (such as paraffin wax, hot stone massage, or gel polish).",
+      "Yes, all our signature bridal packages are all-inclusive. They cover HD or Airbrush makeup, luxury eyelash extensions, intricate bridal hairstyling, dupatta setting, and flawless saree/lehenga draping.",
   },
   {
-    question: "What types of treatments do you offer?",
+    question: "When should I start my pre-bridal skin sittings?",
     answer:
-      "We offer a wide range of services including medical facials, chemical peels, dermal fillers, botox injections, microdermabrasion, and advanced laser therapy tailored to your skin type.",
+      "We highly recommend starting your pre-bridal grooming routine at least 4 to 6 weeks before your wedding day. This allows ample time for de-tan treatments, deep-cleansing facials, and hair spas to work effectively for that natural bridal glow.",
   },
   {
-    question: "How do i book my appointment ?",
+    question: "Can your team travel to outstation destination weddings?",
     answer:
-      "You can easily book your appointment online through our website's booking portal, call our reception directly, or visit us in person to schedule your session.",
+      "Absolutely! Our senior bridal makeup squad travels across India for destination weddings. Outstation bookings require travel and accommodation arrangements to be taken care of by the client.",
   },
   {
-    question: "Can i cancel my appointment",
+    question: "Do you offer makeup trials before booking?",
     answer:
-      "Yes, you can cancel or reschedule your appointment up to 24 hours in advance without any penalty. Cancellations made within 24 hours may incur a small fee.",
+      "Yes, we offer paid bridal trial sessions. If you confirm your booking on the same day by paying the token advance, the full trial amount is adjusted and deducted from your final wedding package billing.",
   },
 ];
 
@@ -35,7 +35,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="bg-[#FCFAF7] py-20 px-4 md:px-8 lg:px-16 w-full overflow-hidden">
+    <section className="bg-[#FCFAF7] py-10 px-4 md:px-8 lg:px-16 w-full overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
         {/* Left Column: FAQ Content */}
         <div className="flex-1 w-full lg:max-w-2xl flex flex-col justify-between">
@@ -44,8 +44,7 @@ const FAQ = () => {
               Frequently Asked Questions
             </h2>
             <p className="text-slate-500 text-sm md:text-base mb-10 leading-relaxed max-w-xl">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
+              Preparing for your big event or wedding day should be completely stress-free. Here are the answers to everything you need to know about our services.
             </p>
 
             {/* Accordion List */}
@@ -66,7 +65,6 @@ const FAQ = () => {
                       />
                     </button>
 
-                    {/* Animated accordion panel using CSS grid for perfect smooth transitions */}
                     <div
                       className={`grid transition-all duration-300 ease-in-out ${
                         isOpen
@@ -86,17 +84,16 @@ const FAQ = () => {
             </div>
           </div>
 
-          {/* Doctor Card and Ratings Section */}
+          {/* Artist Card and Ratings Section */}
           <div className="flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-4">
-              {/* Doctor Pill Container */}
+              {/* Artist Pill Container */}
               <div className="bg-white rounded-full py-2.5 px-6 flex items-center gap-4 shadow-sm border border-[#F0E6D8]/60 hover:shadow-md transition-shadow duration-300">
-                {/* Overlapping Avatars */}
                 <div className="flex items-center">
                   <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-white bg-slate-200">
                     <Image
                       src="/photos/img (2).webp"
-                      alt="Doctor 1"
+                      alt="Senior Makeup Artist"
                       fill
                       className="object-cover"
                     />
@@ -104,7 +101,7 @@ const FAQ = () => {
                   <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-white bg-slate-200 -ml-2.5">
                     <Image
                       src="/photos/img (3).webp"
-                      alt="Doctor 2"
+                      alt="Saree Styling Expert"
                       fill
                       className="object-cover"
                     />
@@ -112,7 +109,7 @@ const FAQ = () => {
                   <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-white bg-slate-200 -ml-2.5">
                     <Image
                       src="/photos/img (4).webp"
-                      alt="Doctor 3"
+                      alt="Hair Stylist"
                       fill
                       className="object-cover"
                     />
@@ -120,23 +117,20 @@ const FAQ = () => {
                   <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-white bg-slate-200 -ml-2.5">
                     <Image
                       src="/photos/img (5).webp"
-                      alt="Doctor 4"
+                      alt="Mehendi Artist"
                       fill
                       className="object-cover"
                     />
                   </div>
                 </div>
 
-                {/* Vertical Divider */}
                 <div className="w-px h-6 bg-[#F0E6D8]"></div>
 
-                {/* Text */}
                 <span className="text-xs md:text-sm font-semibold text-[#0F3057]">
-                  Talk to over 215 doctor
+                  Consult with 15+ senior experts
                 </span>
               </div>
 
-              {/* Diagonal Arrow Round Button */}
               <button className="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-[#b89047] hover:bg-[#b89047] hover:text-white transition-all duration-300 border border-[#F0E6D8]/60 cursor-pointer">
                 <FiArrowUpRight size={22} />
               </button>
@@ -151,18 +145,18 @@ const FAQ = () => {
               </div>
               <span className="text-[11px] md:text-xs font-semibold text-[#0F3057]/70">
                 <strong className="text-[#0F3057] font-bold">(4.8)</strong> 12k+
-                ratings on google
+                happy clients across India
               </span>
             </div>
           </div>
         </div>
 
-        {/* Right Column: Skincare Treatment Image */}
+        {/* Right Column: Treatment Image */}
         <div className="flex-1 w-full lg:max-w-lg">
           <div className="relative w-full aspect-4/5 rounded-[32px] md:rounded-[40px] overflow-hidden shadow-lg border border-[#F0E6D8]/40 bg-slate-100">
             <Image
               src="/photos/img (6).webp"
-              alt="Skincare jade roller facial treatment"
+              alt="Traditional Indian Bridal Glam Makeup Session"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700 ease-out"
               sizes="(max-width: 768px) 100vw, 50vw"
